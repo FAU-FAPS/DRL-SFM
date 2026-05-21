@@ -1,0 +1,10 @@
+{
+    "SAC-HuMap-LeNet-Cost2": ["sac", "cost_as_reward", "angle_reward"],
+    "SAC-HuMap-LeNet-Cost2_Proxemics": ["sac", "cost_as_reward", "angle_reward", "proxemics"],
+    "SAC-HuMap-LeNet-Cost2_VO": ["sac", "cost_as_reward", "velocity_obstacles"],
+    "SAC-HuMap-LeNet-Cost2_SFM": ["sac", "cost_as_reward", "angle_reward", "sfm_prediction"],
+    "PPO-HuMap-LeNet-Cost2_SFM": ["ppo", "cost_as_reward", "angle_reward", "sfm_prediction"],
+    "rPPO-HuMap-LeNet-Cost2_SFM": ["cost_as_reward", "angle_reward", "sfm_prediction"],
+    "SAC-Costmap-LeNet-Cost2_SFM": ["sac", "costmap", "cost_as_reward", "angle_reward", "sfm_prediction"],
+    "SAC-Costmap-LeNet-Cost2": ["sac", "costmap", "cost_as_reward", "angle_reward"]
+}

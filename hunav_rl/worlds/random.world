@@ -1,0 +1,3503 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <world name="maze_world">
+    <plugin name="gazebo_ros_state" filename="libgazebo_ros_state.so">
+        <update_rate>1.0</update_rate>
+    </plugin>
+    <include><uri>model://ground_plane</uri></include>
+    <include><uri>model://sun</uri></include>
+    <model name="maze">
+      <static>true</static>
+      <link name="maze_link">
+        <collision name="col_n_0_0">
+          <geometry><box>
+            <size>1.500 0.050 1.500</size>
+          </box></geometry>
+          <pose>0.000 11.225 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_n_0_0">
+          <geometry><box>
+            <size>1.500 0.050 1.500</size>
+          </box></geometry>
+          <pose>0.000 11.225 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_0_0_left">
+          <geometry><box>
+            <size>0.392 0.175 1.500</size>
+          </box></geometry>
+          <pose>-0.554 9.838 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_0_0_left">
+          <geometry><box>
+            <size>0.392 0.175 1.500</size>
+          </box></geometry>
+          <pose>-0.554 9.838 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_0_0_right">
+          <geometry><box>
+            <size>0.392 0.175 1.500</size>
+          </box></geometry>
+          <pose>0.554 9.838 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_0_0_right">
+          <geometry><box>
+            <size>0.392 0.175 1.500</size>
+          </box></geometry>
+          <pose>0.554 9.838 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_w_0_0">
+          <geometry><box>
+            <size>0.050 1.500 1.500</size>
+          </box></geometry>
+          <pose>-0.725 10.500 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_w_0_0">
+          <geometry><box>
+            <size>0.050 1.500 1.500</size>
+          </box></geometry>
+          <pose>-0.725 10.500 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_n_0_1">
+          <geometry><box>
+            <size>1.500 0.050 1.500</size>
+          </box></geometry>
+          <pose>1.500 11.225 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_n_0_1">
+          <geometry><box>
+            <size>1.500 0.050 1.500</size>
+          </box></geometry>
+          <pose>1.500 11.225 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_e_0_1">
+          <geometry><box>
+            <size>0.050 1.500 1.500</size>
+          </box></geometry>
+          <pose>2.225 10.500 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_e_0_1">
+          <geometry><box>
+            <size>0.050 1.500 1.500</size>
+          </box></geometry>
+          <pose>2.225 10.500 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_0_1">
+          <geometry><box>
+            <size>1.500 0.050 1.500</size>
+          </box></geometry>
+          <pose>1.500 9.775 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_0_1">
+          <geometry><box>
+            <size>1.500 0.050 1.500</size>
+          </box></geometry>
+          <pose>1.500 9.775 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_n_0_2">
+          <geometry><box>
+            <size>1.500 0.050 1.500</size>
+          </box></geometry>
+          <pose>3.000 11.225 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_n_0_2">
+          <geometry><box>
+            <size>1.500 0.050 1.500</size>
+          </box></geometry>
+          <pose>3.000 11.225 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_w_0_2">
+          <geometry><box>
+            <size>0.050 1.500 1.500</size>
+          </box></geometry>
+          <pose>2.275 10.500 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_w_0_2">
+          <geometry><box>
+            <size>0.050 1.500 1.500</size>
+          </box></geometry>
+          <pose>2.275 10.500 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_n_0_3">
+          <geometry><box>
+            <size>1.500 0.050 1.500</size>
+          </box></geometry>
+          <pose>4.500 11.225 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_n_0_3">
+          <geometry><box>
+            <size>1.500 0.050 1.500</size>
+          </box></geometry>
+          <pose>4.500 11.225 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_e_0_3_bottom">
+          <geometry><box>
+            <size>0.157 0.337 1.500</size>
+          </box></geometry>
+          <pose>5.172 9.918 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_e_0_3_bottom">
+          <geometry><box>
+            <size>0.157 0.337 1.500</size>
+          </box></geometry>
+          <pose>5.172 9.918 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_e_0_3_top">
+          <geometry><box>
+            <size>0.157 0.337 1.500</size>
+          </box></geometry>
+          <pose>5.172 11.082 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_e_0_3_top">
+          <geometry><box>
+            <size>0.157 0.337 1.500</size>
+          </box></geometry>
+          <pose>5.172 11.082 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_0_3_left">
+          <geometry><box>
+            <size>0.217 0.157 1.500</size>
+          </box></geometry>
+          <pose>3.859 9.828 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_0_3_left">
+          <geometry><box>
+            <size>0.217 0.157 1.500</size>
+          </box></geometry>
+          <pose>3.859 9.828 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_0_3_right">
+          <geometry><box>
+            <size>0.217 0.157 1.500</size>
+          </box></geometry>
+          <pose>5.141 9.828 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_0_3_right">
+          <geometry><box>
+            <size>0.217 0.157 1.500</size>
+          </box></geometry>
+          <pose>5.141 9.828 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_n_0_4">
+          <geometry><box>
+            <size>1.500 0.050 1.500</size>
+          </box></geometry>
+          <pose>6.000 11.225 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_n_0_4">
+          <geometry><box>
+            <size>1.500 0.050 1.500</size>
+          </box></geometry>
+          <pose>6.000 11.225 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_e_0_4">
+          <geometry><box>
+            <size>0.050 1.500 1.500</size>
+          </box></geometry>
+          <pose>6.725 10.500 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_e_0_4">
+          <geometry><box>
+            <size>0.050 1.500 1.500</size>
+          </box></geometry>
+          <pose>6.725 10.500 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_0_4_left">
+          <geometry><box>
+            <size>0.354 0.230 1.500</size>
+          </box></geometry>
+          <pose>5.427 9.865 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_0_4_left">
+          <geometry><box>
+            <size>0.354 0.230 1.500</size>
+          </box></geometry>
+          <pose>5.427 9.865 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_0_4_right">
+          <geometry><box>
+            <size>0.354 0.230 1.500</size>
+          </box></geometry>
+          <pose>6.573 9.865 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_0_4_right">
+          <geometry><box>
+            <size>0.354 0.230 1.500</size>
+          </box></geometry>
+          <pose>6.573 9.865 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_w_0_4_bottom">
+          <geometry><box>
+            <size>0.230 0.339 1.500</size>
+          </box></geometry>
+          <pose>5.365 9.919 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_w_0_4_bottom">
+          <geometry><box>
+            <size>0.230 0.339 1.500</size>
+          </box></geometry>
+          <pose>5.365 9.919 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_w_0_4_top">
+          <geometry><box>
+            <size>0.230 0.339 1.500</size>
+          </box></geometry>
+          <pose>5.365 11.081 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_w_0_4_top">
+          <geometry><box>
+            <size>0.230 0.339 1.500</size>
+          </box></geometry>
+          <pose>5.365 11.081 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_n_0_5">
+          <geometry><box>
+            <size>1.500 0.050 1.500</size>
+          </box></geometry>
+          <pose>7.500 11.225 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_n_0_5">
+          <geometry><box>
+            <size>1.500 0.050 1.500</size>
+          </box></geometry>
+          <pose>7.500 11.225 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_0_5">
+          <geometry><box>
+            <size>1.500 0.050 1.500</size>
+          </box></geometry>
+          <pose>7.500 9.775 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_0_5">
+          <geometry><box>
+            <size>1.500 0.050 1.500</size>
+          </box></geometry>
+          <pose>7.500 9.775 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_w_0_5">
+          <geometry><box>
+            <size>0.050 1.500 1.500</size>
+          </box></geometry>
+          <pose>6.775 10.500 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_w_0_5">
+          <geometry><box>
+            <size>0.050 1.500 1.500</size>
+          </box></geometry>
+          <pose>6.775 10.500 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_n_0_6">
+          <geometry><box>
+            <size>1.500 0.050 1.500</size>
+          </box></geometry>
+          <pose>9.000 11.225 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_n_0_6">
+          <geometry><box>
+            <size>1.500 0.050 1.500</size>
+          </box></geometry>
+          <pose>9.000 11.225 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_0_6_left">
+          <geometry><box>
+            <size>0.405 0.200 1.500</size>
+          </box></geometry>
+          <pose>8.453 9.850 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_0_6_left">
+          <geometry><box>
+            <size>0.405 0.200 1.500</size>
+          </box></geometry>
+          <pose>8.453 9.850 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_0_6_right">
+          <geometry><box>
+            <size>0.405 0.200 1.500</size>
+          </box></geometry>
+          <pose>9.547 9.850 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_0_6_right">
+          <geometry><box>
+            <size>0.405 0.200 1.500</size>
+          </box></geometry>
+          <pose>9.547 9.850 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_n_0_7">
+          <geometry><box>
+            <size>1.500 0.050 1.500</size>
+          </box></geometry>
+          <pose>10.500 11.225 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_n_0_7">
+          <geometry><box>
+            <size>1.500 0.050 1.500</size>
+          </box></geometry>
+          <pose>10.500 11.225 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_e_0_7">
+          <geometry><box>
+            <size>0.050 1.500 1.500</size>
+          </box></geometry>
+          <pose>11.225 10.500 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_e_0_7">
+          <geometry><box>
+            <size>0.050 1.500 1.500</size>
+          </box></geometry>
+          <pose>11.225 10.500 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_w_1_0">
+          <geometry><box>
+            <size>0.050 1.500 1.500</size>
+          </box></geometry>
+          <pose>-0.725 9.000 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_w_1_0">
+          <geometry><box>
+            <size>0.050 1.500 1.500</size>
+          </box></geometry>
+          <pose>-0.725 9.000 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_e_1_1">
+          <geometry><box>
+            <size>0.085 1.500 1.500</size>
+          </box></geometry>
+          <pose>2.207 9.000 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_e_1_1">
+          <geometry><box>
+            <size>0.085 1.500 1.500</size>
+          </box></geometry>
+          <pose>2.207 9.000 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_1_1_left">
+          <geometry><box>
+            <size>0.202 0.085 1.500</size>
+          </box></geometry>
+          <pose>0.851 8.293 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_1_1_left">
+          <geometry><box>
+            <size>0.202 0.085 1.500</size>
+          </box></geometry>
+          <pose>0.851 8.293 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_1_1_right">
+          <geometry><box>
+            <size>0.202 0.085 1.500</size>
+          </box></geometry>
+          <pose>2.149 8.293 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_1_1_right">
+          <geometry><box>
+            <size>0.202 0.085 1.500</size>
+          </box></geometry>
+          <pose>2.149 8.293 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_n_1_2_left">
+          <geometry><box>
+            <size>0.351 0.222 1.500</size>
+          </box></geometry>
+          <pose>2.425 9.639 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_n_1_2_left">
+          <geometry><box>
+            <size>0.351 0.222 1.500</size>
+          </box></geometry>
+          <pose>2.425 9.639 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_n_1_2_right">
+          <geometry><box>
+            <size>0.351 0.222 1.500</size>
+          </box></geometry>
+          <pose>3.575 9.639 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_n_1_2_right">
+          <geometry><box>
+            <size>0.351 0.222 1.500</size>
+          </box></geometry>
+          <pose>3.575 9.639 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_w_1_2">
+          <geometry><box>
+            <size>0.222 1.500 1.500</size>
+          </box></geometry>
+          <pose>2.361 9.000 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_w_1_2">
+          <geometry><box>
+            <size>0.222 1.500 1.500</size>
+          </box></geometry>
+          <pose>2.361 9.000 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_n_1_3_left">
+          <geometry><box>
+            <size>0.372 0.238 1.500</size>
+          </box></geometry>
+          <pose>3.936 9.631 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_n_1_3_left">
+          <geometry><box>
+            <size>0.372 0.238 1.500</size>
+          </box></geometry>
+          <pose>3.936 9.631 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_n_1_3_right">
+          <geometry><box>
+            <size>0.372 0.238 1.500</size>
+          </box></geometry>
+          <pose>5.064 9.631 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_n_1_3_right">
+          <geometry><box>
+            <size>0.372 0.238 1.500</size>
+          </box></geometry>
+          <pose>5.064 9.631 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_e_1_3_bottom">
+          <geometry><box>
+            <size>0.238 0.256 1.500</size>
+          </box></geometry>
+          <pose>5.131 8.378 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_e_1_3_bottom">
+          <geometry><box>
+            <size>0.238 0.256 1.500</size>
+          </box></geometry>
+          <pose>5.131 8.378 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_e_1_3_top">
+          <geometry><box>
+            <size>0.238 0.256 1.500</size>
+          </box></geometry>
+          <pose>5.131 9.622 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_e_1_3_top">
+          <geometry><box>
+            <size>0.238 0.256 1.500</size>
+          </box></geometry>
+          <pose>5.131 9.622 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_1_3">
+          <geometry><box>
+            <size>1.500 0.238 1.500</size>
+          </box></geometry>
+          <pose>4.500 8.369 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_1_3">
+          <geometry><box>
+            <size>1.500 0.238 1.500</size>
+          </box></geometry>
+          <pose>4.500 8.369 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_e_1_4_bottom">
+          <geometry><box>
+            <size>0.174 0.233 1.500</size>
+          </box></geometry>
+          <pose>6.663 8.366 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_e_1_4_bottom">
+          <geometry><box>
+            <size>0.174 0.233 1.500</size>
+          </box></geometry>
+          <pose>6.663 8.366 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_e_1_4_top">
+          <geometry><box>
+            <size>0.174 0.233 1.500</size>
+          </box></geometry>
+          <pose>6.663 9.634 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_e_1_4_top">
+          <geometry><box>
+            <size>0.174 0.233 1.500</size>
+          </box></geometry>
+          <pose>6.663 9.634 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_1_4_left">
+          <geometry><box>
+            <size>0.216 0.174 1.500</size>
+          </box></geometry>
+          <pose>5.358 8.337 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_1_4_left">
+          <geometry><box>
+            <size>0.216 0.174 1.500</size>
+          </box></geometry>
+          <pose>5.358 8.337 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_1_4_right">
+          <geometry><box>
+            <size>0.216 0.174 1.500</size>
+          </box></geometry>
+          <pose>6.642 8.337 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_1_4_right">
+          <geometry><box>
+            <size>0.216 0.174 1.500</size>
+          </box></geometry>
+          <pose>6.642 8.337 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_w_1_4">
+          <geometry><box>
+            <size>0.174 1.500 1.500</size>
+          </box></geometry>
+          <pose>5.337 9.000 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_w_1_4">
+          <geometry><box>
+            <size>0.174 1.500 1.500</size>
+          </box></geometry>
+          <pose>5.337 9.000 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_1_5_left">
+          <geometry><box>
+            <size>0.202 0.192 1.500</size>
+          </box></geometry>
+          <pose>6.851 8.346 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_1_5_left">
+          <geometry><box>
+            <size>0.202 0.192 1.500</size>
+          </box></geometry>
+          <pose>6.851 8.346 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_1_5_right">
+          <geometry><box>
+            <size>0.202 0.192 1.500</size>
+          </box></geometry>
+          <pose>8.149 8.346 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_1_5_right">
+          <geometry><box>
+            <size>0.202 0.192 1.500</size>
+          </box></geometry>
+          <pose>8.149 8.346 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_e_1_6_bottom">
+          <geometry><box>
+            <size>0.204 0.297 1.500</size>
+          </box></geometry>
+          <pose>9.648 8.399 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_e_1_6_bottom">
+          <geometry><box>
+            <size>0.204 0.297 1.500</size>
+          </box></geometry>
+          <pose>9.648 8.399 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_e_1_6_top">
+          <geometry><box>
+            <size>0.204 0.297 1.500</size>
+          </box></geometry>
+          <pose>9.648 9.601 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_e_1_6_top">
+          <geometry><box>
+            <size>0.204 0.297 1.500</size>
+          </box></geometry>
+          <pose>9.648 9.601 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_1_6">
+          <geometry><box>
+            <size>1.500 0.204 1.500</size>
+          </box></geometry>
+          <pose>9.000 8.352 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_1_6">
+          <geometry><box>
+            <size>1.500 0.204 1.500</size>
+          </box></geometry>
+          <pose>9.000 8.352 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_n_1_7_left">
+          <geometry><box>
+            <size>0.442 0.131 1.500</size>
+          </box></geometry>
+          <pose>9.971 9.684 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_n_1_7_left">
+          <geometry><box>
+            <size>0.442 0.131 1.500</size>
+          </box></geometry>
+          <pose>9.971 9.684 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_n_1_7_right">
+          <geometry><box>
+            <size>0.442 0.131 1.500</size>
+          </box></geometry>
+          <pose>11.029 9.684 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_n_1_7_right">
+          <geometry><box>
+            <size>0.442 0.131 1.500</size>
+          </box></geometry>
+          <pose>11.029 9.684 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_e_1_7">
+          <geometry><box>
+            <size>0.050 1.500 1.500</size>
+          </box></geometry>
+          <pose>11.225 9.000 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_e_1_7">
+          <geometry><box>
+            <size>0.050 1.500 1.500</size>
+          </box></geometry>
+          <pose>11.225 9.000 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_w_1_7">
+          <geometry><box>
+            <size>0.131 1.500 1.500</size>
+          </box></geometry>
+          <pose>9.816 9.000 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_w_1_7">
+          <geometry><box>
+            <size>0.131 1.500 1.500</size>
+          </box></geometry>
+          <pose>9.816 9.000 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_e_2_0">
+          <geometry><box>
+            <size>0.050 1.500 1.500</size>
+          </box></geometry>
+          <pose>0.725 7.500 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_e_2_0">
+          <geometry><box>
+            <size>0.050 1.500 1.500</size>
+          </box></geometry>
+          <pose>0.725 7.500 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_2_0">
+          <geometry><box>
+            <size>1.500 0.050 1.500</size>
+          </box></geometry>
+          <pose>0.000 6.775 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_2_0">
+          <geometry><box>
+            <size>1.500 0.050 1.500</size>
+          </box></geometry>
+          <pose>0.000 6.775 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_w_2_0">
+          <geometry><box>
+            <size>0.050 1.500 1.500</size>
+          </box></geometry>
+          <pose>-0.725 7.500 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_w_2_0">
+          <geometry><box>
+            <size>0.050 1.500 1.500</size>
+          </box></geometry>
+          <pose>-0.725 7.500 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_e_2_1_bottom">
+          <geometry><box>
+            <size>0.213 0.324 1.500</size>
+          </box></geometry>
+          <pose>2.143 6.912 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_e_2_1_bottom">
+          <geometry><box>
+            <size>0.213 0.324 1.500</size>
+          </box></geometry>
+          <pose>2.143 6.912 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_e_2_1_top">
+          <geometry><box>
+            <size>0.213 0.324 1.500</size>
+          </box></geometry>
+          <pose>2.143 8.088 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_e_2_1_top">
+          <geometry><box>
+            <size>0.213 0.324 1.500</size>
+          </box></geometry>
+          <pose>2.143 8.088 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_2_1_left">
+          <geometry><box>
+            <size>0.425 0.213 1.500</size>
+          </box></geometry>
+          <pose>0.963 6.857 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_2_1_left">
+          <geometry><box>
+            <size>0.425 0.213 1.500</size>
+          </box></geometry>
+          <pose>0.963 6.857 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_2_1_right">
+          <geometry><box>
+            <size>0.425 0.213 1.500</size>
+          </box></geometry>
+          <pose>2.037 6.857 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_2_1_right">
+          <geometry><box>
+            <size>0.425 0.213 1.500</size>
+          </box></geometry>
+          <pose>2.037 6.857 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_w_2_1">
+          <geometry><box>
+            <size>0.050 1.500 1.500</size>
+          </box></geometry>
+          <pose>0.775 7.500 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_w_2_1">
+          <geometry><box>
+            <size>0.050 1.500 1.500</size>
+          </box></geometry>
+          <pose>0.775 7.500 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_e_2_2_bottom">
+          <geometry><box>
+            <size>0.240 0.293 1.500</size>
+          </box></geometry>
+          <pose>3.630 6.897 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_e_2_2_bottom">
+          <geometry><box>
+            <size>0.240 0.293 1.500</size>
+          </box></geometry>
+          <pose>3.630 6.897 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_e_2_2_top">
+          <geometry><box>
+            <size>0.240 0.293 1.500</size>
+          </box></geometry>
+          <pose>3.630 8.103 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_e_2_2_top">
+          <geometry><box>
+            <size>0.240 0.293 1.500</size>
+          </box></geometry>
+          <pose>3.630 8.103 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_2_2">
+          <geometry><box>
+            <size>1.500 0.240 1.500</size>
+          </box></geometry>
+          <pose>3.000 6.870 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_2_2">
+          <geometry><box>
+            <size>1.500 0.240 1.500</size>
+          </box></geometry>
+          <pose>3.000 6.870 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_e_2_3">
+          <geometry><box>
+            <size>0.108 1.500 1.500</size>
+          </box></geometry>
+          <pose>5.196 7.500 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_e_2_3">
+          <geometry><box>
+            <size>0.108 1.500 1.500</size>
+          </box></geometry>
+          <pose>5.196 7.500 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_w_2_3">
+          <geometry><box>
+            <size>0.108 1.500 1.500</size>
+          </box></geometry>
+          <pose>3.804 7.500 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_w_2_3">
+          <geometry><box>
+            <size>0.108 1.500 1.500</size>
+          </box></geometry>
+          <pose>3.804 7.500 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_2_4">
+          <geometry><box>
+            <size>1.500 0.069 1.500</size>
+          </box></geometry>
+          <pose>6.000 6.784 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_2_4">
+          <geometry><box>
+            <size>1.500 0.069 1.500</size>
+          </box></geometry>
+          <pose>6.000 6.784 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_w_2_4">
+          <geometry><box>
+            <size>0.069 1.500 1.500</size>
+          </box></geometry>
+          <pose>5.284 7.500 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_w_2_4">
+          <geometry><box>
+            <size>0.069 1.500 1.500</size>
+          </box></geometry>
+          <pose>5.284 7.500 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_e_2_5">
+          <geometry><box>
+            <size>0.076 1.500 1.500</size>
+          </box></geometry>
+          <pose>8.212 7.500 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_e_2_5">
+          <geometry><box>
+            <size>0.076 1.500 1.500</size>
+          </box></geometry>
+          <pose>8.212 7.500 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_2_5_left">
+          <geometry><box>
+            <size>0.336 0.076 1.500</size>
+          </box></geometry>
+          <pose>6.918 6.788 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_2_5_left">
+          <geometry><box>
+            <size>0.336 0.076 1.500</size>
+          </box></geometry>
+          <pose>6.918 6.788 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_2_5_right">
+          <geometry><box>
+            <size>0.336 0.076 1.500</size>
+          </box></geometry>
+          <pose>8.082 6.788 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_2_5_right">
+          <geometry><box>
+            <size>0.336 0.076 1.500</size>
+          </box></geometry>
+          <pose>8.082 6.788 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_n_2_6_left">
+          <geometry><box>
+            <size>0.324 0.075 1.500</size>
+          </box></geometry>
+          <pose>8.412 8.212 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_n_2_6_left">
+          <geometry><box>
+            <size>0.324 0.075 1.500</size>
+          </box></geometry>
+          <pose>8.412 8.212 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_n_2_6_right">
+          <geometry><box>
+            <size>0.324 0.075 1.500</size>
+          </box></geometry>
+          <pose>9.588 8.212 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_n_2_6_right">
+          <geometry><box>
+            <size>0.324 0.075 1.500</size>
+          </box></geometry>
+          <pose>9.588 8.212 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_2_6">
+          <geometry><box>
+            <size>1.500 0.075 1.500</size>
+          </box></geometry>
+          <pose>9.000 6.788 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_2_6">
+          <geometry><box>
+            <size>1.500 0.075 1.500</size>
+          </box></geometry>
+          <pose>9.000 6.788 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_w_2_6_bottom">
+          <geometry><box>
+            <size>0.075 0.210 1.500</size>
+          </box></geometry>
+          <pose>8.288 6.855 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_w_2_6_bottom">
+          <geometry><box>
+            <size>0.075 0.210 1.500</size>
+          </box></geometry>
+          <pose>8.288 6.855 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_w_2_6_top">
+          <geometry><box>
+            <size>0.075 0.210 1.500</size>
+          </box></geometry>
+          <pose>8.288 8.145 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_w_2_6_top">
+          <geometry><box>
+            <size>0.075 0.210 1.500</size>
+          </box></geometry>
+          <pose>8.288 8.145 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_e_2_7">
+          <geometry><box>
+            <size>0.050 1.500 1.500</size>
+          </box></geometry>
+          <pose>11.225 7.500 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_e_2_7">
+          <geometry><box>
+            <size>0.050 1.500 1.500</size>
+          </box></geometry>
+          <pose>11.225 7.500 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_2_7">
+          <geometry><box>
+            <size>1.500 0.206 1.500</size>
+          </box></geometry>
+          <pose>10.500 6.853 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_2_7">
+          <geometry><box>
+            <size>1.500 0.206 1.500</size>
+          </box></geometry>
+          <pose>10.500 6.853 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_w_3_0">
+          <geometry><box>
+            <size>0.050 1.500 1.500</size>
+          </box></geometry>
+          <pose>-0.725 6.000 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_w_3_0">
+          <geometry><box>
+            <size>0.050 1.500 1.500</size>
+          </box></geometry>
+          <pose>-0.725 6.000 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_e_3_1">
+          <geometry><box>
+            <size>0.174 1.500 1.500</size>
+          </box></geometry>
+          <pose>2.163 6.000 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_e_3_1">
+          <geometry><box>
+            <size>0.174 1.500 1.500</size>
+          </box></geometry>
+          <pose>2.163 6.000 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_3_1">
+          <geometry><box>
+            <size>1.500 0.174 1.500</size>
+          </box></geometry>
+          <pose>1.500 5.337 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_3_1">
+          <geometry><box>
+            <size>1.500 0.174 1.500</size>
+          </box></geometry>
+          <pose>1.500 5.337 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_w_3_1_bottom">
+          <geometry><box>
+            <size>0.174 0.224 1.500</size>
+          </box></geometry>
+          <pose>0.837 5.362 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_w_3_1_bottom">
+          <geometry><box>
+            <size>0.174 0.224 1.500</size>
+          </box></geometry>
+          <pose>0.837 5.362 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_w_3_1_top">
+          <geometry><box>
+            <size>0.174 0.224 1.500</size>
+          </box></geometry>
+          <pose>0.837 6.638 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_w_3_1_top">
+          <geometry><box>
+            <size>0.174 0.224 1.500</size>
+          </box></geometry>
+          <pose>0.837 6.638 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_3_2_left">
+          <geometry><box>
+            <size>0.376 0.173 1.500</size>
+          </box></geometry>
+          <pose>2.438 5.336 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_3_2_left">
+          <geometry><box>
+            <size>0.376 0.173 1.500</size>
+          </box></geometry>
+          <pose>2.438 5.336 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_3_2_right">
+          <geometry><box>
+            <size>0.376 0.173 1.500</size>
+          </box></geometry>
+          <pose>3.562 5.336 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_3_2_right">
+          <geometry><box>
+            <size>0.376 0.173 1.500</size>
+          </box></geometry>
+          <pose>3.562 5.336 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_w_3_2">
+          <geometry><box>
+            <size>0.173 1.500 1.500</size>
+          </box></geometry>
+          <pose>2.336 6.000 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_w_3_2">
+          <geometry><box>
+            <size>0.173 1.500 1.500</size>
+          </box></geometry>
+          <pose>2.336 6.000 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_n_3_3_left">
+          <geometry><box>
+            <size>0.395 0.198 1.500</size>
+          </box></geometry>
+          <pose>3.948 6.651 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_n_3_3_left">
+          <geometry><box>
+            <size>0.395 0.198 1.500</size>
+          </box></geometry>
+          <pose>3.948 6.651 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_n_3_3_right">
+          <geometry><box>
+            <size>0.395 0.198 1.500</size>
+          </box></geometry>
+          <pose>5.052 6.651 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_n_3_3_right">
+          <geometry><box>
+            <size>0.395 0.198 1.500</size>
+          </box></geometry>
+          <pose>5.052 6.651 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_e_3_3_bottom">
+          <geometry><box>
+            <size>0.198 0.246 1.500</size>
+          </box></geometry>
+          <pose>5.151 5.373 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_e_3_3_bottom">
+          <geometry><box>
+            <size>0.198 0.246 1.500</size>
+          </box></geometry>
+          <pose>5.151 5.373 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_e_3_3_top">
+          <geometry><box>
+            <size>0.198 0.246 1.500</size>
+          </box></geometry>
+          <pose>5.151 6.627 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_e_3_3_top">
+          <geometry><box>
+            <size>0.198 0.246 1.500</size>
+          </box></geometry>
+          <pose>5.151 6.627 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_w_3_3_bottom">
+          <geometry><box>
+            <size>0.198 0.445 1.500</size>
+          </box></geometry>
+          <pose>3.849 5.472 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_w_3_3_bottom">
+          <geometry><box>
+            <size>0.198 0.445 1.500</size>
+          </box></geometry>
+          <pose>3.849 5.472 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_w_3_3_top">
+          <geometry><box>
+            <size>0.198 0.445 1.500</size>
+          </box></geometry>
+          <pose>3.849 6.528 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_w_3_3_top">
+          <geometry><box>
+            <size>0.198 0.445 1.500</size>
+          </box></geometry>
+          <pose>3.849 6.528 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_n_3_4_left">
+          <geometry><box>
+            <size>0.223 0.143 1.500</size>
+          </box></geometry>
+          <pose>5.362 6.679 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_n_3_4_left">
+          <geometry><box>
+            <size>0.223 0.143 1.500</size>
+          </box></geometry>
+          <pose>5.362 6.679 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_n_3_4_right">
+          <geometry><box>
+            <size>0.223 0.143 1.500</size>
+          </box></geometry>
+          <pose>6.638 6.679 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_n_3_4_right">
+          <geometry><box>
+            <size>0.223 0.143 1.500</size>
+          </box></geometry>
+          <pose>6.638 6.679 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_e_3_4_bottom">
+          <geometry><box>
+            <size>0.143 0.328 1.500</size>
+          </box></geometry>
+          <pose>6.679 5.414 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_e_3_4_bottom">
+          <geometry><box>
+            <size>0.143 0.328 1.500</size>
+          </box></geometry>
+          <pose>6.679 5.414 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_e_3_4_top">
+          <geometry><box>
+            <size>0.143 0.328 1.500</size>
+          </box></geometry>
+          <pose>6.679 6.586 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_e_3_4_top">
+          <geometry><box>
+            <size>0.143 0.328 1.500</size>
+          </box></geometry>
+          <pose>6.679 6.586 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_w_3_4_bottom">
+          <geometry><box>
+            <size>0.143 0.335 1.500</size>
+          </box></geometry>
+          <pose>5.321 5.417 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_w_3_4_bottom">
+          <geometry><box>
+            <size>0.143 0.335 1.500</size>
+          </box></geometry>
+          <pose>5.321 5.417 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_w_3_4_top">
+          <geometry><box>
+            <size>0.143 0.335 1.500</size>
+          </box></geometry>
+          <pose>5.321 6.583 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_w_3_4_top">
+          <geometry><box>
+            <size>0.143 0.335 1.500</size>
+          </box></geometry>
+          <pose>5.321 6.583 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_3_5_left">
+          <geometry><box>
+            <size>0.380 0.089 1.500</size>
+          </box></geometry>
+          <pose>6.940 5.295 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_3_5_left">
+          <geometry><box>
+            <size>0.380 0.089 1.500</size>
+          </box></geometry>
+          <pose>6.940 5.295 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_3_5_right">
+          <geometry><box>
+            <size>0.380 0.089 1.500</size>
+          </box></geometry>
+          <pose>8.060 5.295 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_3_5_right">
+          <geometry><box>
+            <size>0.380 0.089 1.500</size>
+          </box></geometry>
+          <pose>8.060 5.295 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_w_3_5">
+          <geometry><box>
+            <size>0.089 1.500 1.500</size>
+          </box></geometry>
+          <pose>6.795 6.000 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_w_3_5">
+          <geometry><box>
+            <size>0.089 1.500 1.500</size>
+          </box></geometry>
+          <pose>6.795 6.000 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_3_6">
+          <geometry><box>
+            <size>1.500 0.065 1.500</size>
+          </box></geometry>
+          <pose>9.000 5.282 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_3_6">
+          <geometry><box>
+            <size>1.500 0.065 1.500</size>
+          </box></geometry>
+          <pose>9.000 5.282 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_e_3_7">
+          <geometry><box>
+            <size>0.050 1.500 1.500</size>
+          </box></geometry>
+          <pose>11.225 6.000 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_e_3_7">
+          <geometry><box>
+            <size>0.050 1.500 1.500</size>
+          </box></geometry>
+          <pose>11.225 6.000 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_e_4_0_bottom">
+          <geometry><box>
+            <size>0.225 0.340 1.500</size>
+          </box></geometry>
+          <pose>0.638 3.920 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_e_4_0_bottom">
+          <geometry><box>
+            <size>0.225 0.340 1.500</size>
+          </box></geometry>
+          <pose>0.638 3.920 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_e_4_0_top">
+          <geometry><box>
+            <size>0.225 0.340 1.500</size>
+          </box></geometry>
+          <pose>0.638 5.080 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_e_4_0_top">
+          <geometry><box>
+            <size>0.225 0.340 1.500</size>
+          </box></geometry>
+          <pose>0.638 5.080 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_4_0_left">
+          <geometry><box>
+            <size>0.224 0.225 1.500</size>
+          </box></geometry>
+          <pose>-0.638 3.862 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_4_0_left">
+          <geometry><box>
+            <size>0.224 0.225 1.500</size>
+          </box></geometry>
+          <pose>-0.638 3.862 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_4_0_right">
+          <geometry><box>
+            <size>0.224 0.225 1.500</size>
+          </box></geometry>
+          <pose>0.638 3.862 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_4_0_right">
+          <geometry><box>
+            <size>0.224 0.225 1.500</size>
+          </box></geometry>
+          <pose>0.638 3.862 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_w_4_0">
+          <geometry><box>
+            <size>0.050 1.500 1.500</size>
+          </box></geometry>
+          <pose>-0.725 4.500 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_w_4_0">
+          <geometry><box>
+            <size>0.050 1.500 1.500</size>
+          </box></geometry>
+          <pose>-0.725 4.500 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_n_4_1_left">
+          <geometry><box>
+            <size>0.371 0.149 1.500</size>
+          </box></geometry>
+          <pose>0.935 5.176 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_n_4_1_left">
+          <geometry><box>
+            <size>0.371 0.149 1.500</size>
+          </box></geometry>
+          <pose>0.935 5.176 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_n_4_1_right">
+          <geometry><box>
+            <size>0.371 0.149 1.500</size>
+          </box></geometry>
+          <pose>2.065 5.176 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_n_4_1_right">
+          <geometry><box>
+            <size>0.371 0.149 1.500</size>
+          </box></geometry>
+          <pose>2.065 5.176 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_4_1">
+          <geometry><box>
+            <size>1.500 0.149 1.500</size>
+          </box></geometry>
+          <pose>1.500 3.824 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_4_1">
+          <geometry><box>
+            <size>1.500 0.149 1.500</size>
+          </box></geometry>
+          <pose>1.500 3.824 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_w_4_1">
+          <geometry><box>
+            <size>0.149 1.500 1.500</size>
+          </box></geometry>
+          <pose>0.824 4.500 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_w_4_1">
+          <geometry><box>
+            <size>0.149 1.500 1.500</size>
+          </box></geometry>
+          <pose>0.824 4.500 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_e_4_3">
+          <geometry><box>
+            <size>0.184 1.500 1.500</size>
+          </box></geometry>
+          <pose>5.158 4.500 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_e_4_3">
+          <geometry><box>
+            <size>0.184 1.500 1.500</size>
+          </box></geometry>
+          <pose>5.158 4.500 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_4_3">
+          <geometry><box>
+            <size>1.500 0.184 1.500</size>
+          </box></geometry>
+          <pose>4.500 3.842 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_4_3">
+          <geometry><box>
+            <size>1.500 0.184 1.500</size>
+          </box></geometry>
+          <pose>4.500 3.842 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_w_4_4_bottom">
+          <geometry><box>
+            <size>0.113 0.336 1.500</size>
+          </box></geometry>
+          <pose>5.307 3.918 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_w_4_4_bottom">
+          <geometry><box>
+            <size>0.113 0.336 1.500</size>
+          </box></geometry>
+          <pose>5.307 3.918 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_w_4_4_top">
+          <geometry><box>
+            <size>0.113 0.336 1.500</size>
+          </box></geometry>
+          <pose>5.307 5.082 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_w_4_4_top">
+          <geometry><box>
+            <size>0.113 0.336 1.500</size>
+          </box></geometry>
+          <pose>5.307 5.082 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_e_4_5">
+          <geometry><box>
+            <size>0.248 1.500 1.500</size>
+          </box></geometry>
+          <pose>8.126 4.500 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_e_4_5">
+          <geometry><box>
+            <size>0.248 1.500 1.500</size>
+          </box></geometry>
+          <pose>8.126 4.500 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_4_5_left">
+          <geometry><box>
+            <size>0.440 0.248 1.500</size>
+          </box></geometry>
+          <pose>6.970 3.874 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_4_5_left">
+          <geometry><box>
+            <size>0.440 0.248 1.500</size>
+          </box></geometry>
+          <pose>6.970 3.874 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_4_5_right">
+          <geometry><box>
+            <size>0.440 0.248 1.500</size>
+          </box></geometry>
+          <pose>8.030 3.874 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_4_5_right">
+          <geometry><box>
+            <size>0.440 0.248 1.500</size>
+          </box></geometry>
+          <pose>8.030 3.874 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_w_4_5_bottom">
+          <geometry><box>
+            <size>0.248 0.277 1.500</size>
+          </box></geometry>
+          <pose>6.874 3.888 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_w_4_5_bottom">
+          <geometry><box>
+            <size>0.248 0.277 1.500</size>
+          </box></geometry>
+          <pose>6.874 3.888 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_w_4_5_top">
+          <geometry><box>
+            <size>0.248 0.277 1.500</size>
+          </box></geometry>
+          <pose>6.874 5.112 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_w_4_5_top">
+          <geometry><box>
+            <size>0.248 0.277 1.500</size>
+          </box></geometry>
+          <pose>6.874 5.112 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_e_4_6">
+          <geometry><box>
+            <size>0.166 1.500 1.500</size>
+          </box></geometry>
+          <pose>9.667 4.500 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_e_4_6">
+          <geometry><box>
+            <size>0.166 1.500 1.500</size>
+          </box></geometry>
+          <pose>9.667 4.500 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_4_6_left">
+          <geometry><box>
+            <size>0.385 0.166 1.500</size>
+          </box></geometry>
+          <pose>8.442 3.833 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_4_6_left">
+          <geometry><box>
+            <size>0.385 0.166 1.500</size>
+          </box></geometry>
+          <pose>8.442 3.833 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_4_6_right">
+          <geometry><box>
+            <size>0.385 0.166 1.500</size>
+          </box></geometry>
+          <pose>9.558 3.833 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_4_6_right">
+          <geometry><box>
+            <size>0.385 0.166 1.500</size>
+          </box></geometry>
+          <pose>9.558 3.833 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_w_4_6">
+          <geometry><box>
+            <size>0.166 1.500 1.500</size>
+          </box></geometry>
+          <pose>8.333 4.500 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_w_4_6">
+          <geometry><box>
+            <size>0.166 1.500 1.500</size>
+          </box></geometry>
+          <pose>8.333 4.500 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_e_4_7">
+          <geometry><box>
+            <size>0.050 1.500 1.500</size>
+          </box></geometry>
+          <pose>11.225 4.500 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_e_4_7">
+          <geometry><box>
+            <size>0.050 1.500 1.500</size>
+          </box></geometry>
+          <pose>11.225 4.500 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_w_4_7_bottom">
+          <geometry><box>
+            <size>0.178 0.261 1.500</size>
+          </box></geometry>
+          <pose>9.839 3.881 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_w_4_7_bottom">
+          <geometry><box>
+            <size>0.178 0.261 1.500</size>
+          </box></geometry>
+          <pose>9.839 3.881 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_w_4_7_top">
+          <geometry><box>
+            <size>0.178 0.261 1.500</size>
+          </box></geometry>
+          <pose>9.839 5.119 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_w_4_7_top">
+          <geometry><box>
+            <size>0.178 0.261 1.500</size>
+          </box></geometry>
+          <pose>9.839 5.119 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_5_0">
+          <geometry><box>
+            <size>1.500 0.062 1.500</size>
+          </box></geometry>
+          <pose>0.000 2.281 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_5_0">
+          <geometry><box>
+            <size>1.500 0.062 1.500</size>
+          </box></geometry>
+          <pose>0.000 2.281 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_w_5_0">
+          <geometry><box>
+            <size>0.050 1.500 1.500</size>
+          </box></geometry>
+          <pose>-0.725 3.000 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_w_5_0">
+          <geometry><box>
+            <size>0.050 1.500 1.500</size>
+          </box></geometry>
+          <pose>-0.725 3.000 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_5_1_left">
+          <geometry><box>
+            <size>0.284 0.152 1.500</size>
+          </box></geometry>
+          <pose>0.892 2.326 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_5_1_left">
+          <geometry><box>
+            <size>0.284 0.152 1.500</size>
+          </box></geometry>
+          <pose>0.892 2.326 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_5_1_right">
+          <geometry><box>
+            <size>0.284 0.152 1.500</size>
+          </box></geometry>
+          <pose>2.108 2.326 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_5_1_right">
+          <geometry><box>
+            <size>0.284 0.152 1.500</size>
+          </box></geometry>
+          <pose>2.108 2.326 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_e_5_2_bottom">
+          <geometry><box>
+            <size>0.177 0.242 1.500</size>
+          </box></geometry>
+          <pose>3.661 2.371 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_e_5_2_bottom">
+          <geometry><box>
+            <size>0.177 0.242 1.500</size>
+          </box></geometry>
+          <pose>3.661 2.371 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_e_5_2_top">
+          <geometry><box>
+            <size>0.177 0.242 1.500</size>
+          </box></geometry>
+          <pose>3.661 3.629 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_e_5_2_top">
+          <geometry><box>
+            <size>0.177 0.242 1.500</size>
+          </box></geometry>
+          <pose>3.661 3.629 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_w_5_2_bottom">
+          <geometry><box>
+            <size>0.177 0.345 1.500</size>
+          </box></geometry>
+          <pose>2.339 2.423 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_w_5_2_bottom">
+          <geometry><box>
+            <size>0.177 0.345 1.500</size>
+          </box></geometry>
+          <pose>2.339 2.423 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_w_5_2_top">
+          <geometry><box>
+            <size>0.177 0.345 1.500</size>
+          </box></geometry>
+          <pose>2.339 3.577 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_w_5_2_top">
+          <geometry><box>
+            <size>0.177 0.345 1.500</size>
+          </box></geometry>
+          <pose>2.339 3.577 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_w_5_3">
+          <geometry><box>
+            <size>0.155 1.500 1.500</size>
+          </box></geometry>
+          <pose>3.828 3.000 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_w_5_3">
+          <geometry><box>
+            <size>0.155 1.500 1.500</size>
+          </box></geometry>
+          <pose>3.828 3.000 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_e_5_4_bottom">
+          <geometry><box>
+            <size>0.134 0.252 1.500</size>
+          </box></geometry>
+          <pose>6.683 2.376 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_e_5_4_bottom">
+          <geometry><box>
+            <size>0.134 0.252 1.500</size>
+          </box></geometry>
+          <pose>6.683 2.376 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_e_5_4_top">
+          <geometry><box>
+            <size>0.134 0.252 1.500</size>
+          </box></geometry>
+          <pose>6.683 3.624 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_e_5_4_top">
+          <geometry><box>
+            <size>0.134 0.252 1.500</size>
+          </box></geometry>
+          <pose>6.683 3.624 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_5_4_left">
+          <geometry><box>
+            <size>0.371 0.134 1.500</size>
+          </box></geometry>
+          <pose>5.435 2.317 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_5_4_left">
+          <geometry><box>
+            <size>0.371 0.134 1.500</size>
+          </box></geometry>
+          <pose>5.435 2.317 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_5_4_right">
+          <geometry><box>
+            <size>0.371 0.134 1.500</size>
+          </box></geometry>
+          <pose>6.565 2.317 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_5_4_right">
+          <geometry><box>
+            <size>0.371 0.134 1.500</size>
+          </box></geometry>
+          <pose>6.565 2.317 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_e_5_5">
+          <geometry><box>
+            <size>0.116 1.500 1.500</size>
+          </box></geometry>
+          <pose>8.192 3.000 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_e_5_5">
+          <geometry><box>
+            <size>0.116 1.500 1.500</size>
+          </box></geometry>
+          <pose>8.192 3.000 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_5_5_left">
+          <geometry><box>
+            <size>0.311 0.116 1.500</size>
+          </box></geometry>
+          <pose>6.906 2.308 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_5_5_left">
+          <geometry><box>
+            <size>0.311 0.116 1.500</size>
+          </box></geometry>
+          <pose>6.906 2.308 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_5_5_right">
+          <geometry><box>
+            <size>0.311 0.116 1.500</size>
+          </box></geometry>
+          <pose>8.094 2.308 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_5_5_right">
+          <geometry><box>
+            <size>0.311 0.116 1.500</size>
+          </box></geometry>
+          <pose>8.094 2.308 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_w_5_5">
+          <geometry><box>
+            <size>0.116 1.500 1.500</size>
+          </box></geometry>
+          <pose>6.808 3.000 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_w_5_5">
+          <geometry><box>
+            <size>0.116 1.500 1.500</size>
+          </box></geometry>
+          <pose>6.808 3.000 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_e_5_6_bottom">
+          <geometry><box>
+            <size>0.092 0.261 1.500</size>
+          </box></geometry>
+          <pose>9.704 2.381 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_e_5_6_bottom">
+          <geometry><box>
+            <size>0.092 0.261 1.500</size>
+          </box></geometry>
+          <pose>9.704 2.381 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_e_5_6_top">
+          <geometry><box>
+            <size>0.092 0.261 1.500</size>
+          </box></geometry>
+          <pose>9.704 3.619 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_e_5_6_top">
+          <geometry><box>
+            <size>0.092 0.261 1.500</size>
+          </box></geometry>
+          <pose>9.704 3.619 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_5_6_left">
+          <geometry><box>
+            <size>0.441 0.092 1.500</size>
+          </box></geometry>
+          <pose>8.470 2.296 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_5_6_left">
+          <geometry><box>
+            <size>0.441 0.092 1.500</size>
+          </box></geometry>
+          <pose>8.470 2.296 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_5_6_right">
+          <geometry><box>
+            <size>0.441 0.092 1.500</size>
+          </box></geometry>
+          <pose>9.530 2.296 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_5_6_right">
+          <geometry><box>
+            <size>0.441 0.092 1.500</size>
+          </box></geometry>
+          <pose>9.530 2.296 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_w_5_6_bottom">
+          <geometry><box>
+            <size>0.092 0.274 1.500</size>
+          </box></geometry>
+          <pose>8.296 2.387 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_w_5_6_bottom">
+          <geometry><box>
+            <size>0.092 0.274 1.500</size>
+          </box></geometry>
+          <pose>8.296 2.387 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_w_5_6_top">
+          <geometry><box>
+            <size>0.092 0.274 1.500</size>
+          </box></geometry>
+          <pose>8.296 3.613 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_w_5_6_top">
+          <geometry><box>
+            <size>0.092 0.274 1.500</size>
+          </box></geometry>
+          <pose>8.296 3.613 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_n_5_7_left">
+          <geometry><box>
+            <size>0.425 0.132 1.500</size>
+          </box></geometry>
+          <pose>9.962 3.684 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_n_5_7_left">
+          <geometry><box>
+            <size>0.425 0.132 1.500</size>
+          </box></geometry>
+          <pose>9.962 3.684 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_n_5_7_right">
+          <geometry><box>
+            <size>0.425 0.132 1.500</size>
+          </box></geometry>
+          <pose>11.038 3.684 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_n_5_7_right">
+          <geometry><box>
+            <size>0.425 0.132 1.500</size>
+          </box></geometry>
+          <pose>11.038 3.684 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_e_5_7">
+          <geometry><box>
+            <size>0.050 1.500 1.500</size>
+          </box></geometry>
+          <pose>11.225 3.000 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_e_5_7">
+          <geometry><box>
+            <size>0.050 1.500 1.500</size>
+          </box></geometry>
+          <pose>11.225 3.000 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_5_7_left">
+          <geometry><box>
+            <size>0.203 0.132 1.500</size>
+          </box></geometry>
+          <pose>9.852 2.316 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_5_7_left">
+          <geometry><box>
+            <size>0.203 0.132 1.500</size>
+          </box></geometry>
+          <pose>9.852 2.316 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_5_7_right">
+          <geometry><box>
+            <size>0.203 0.132 1.500</size>
+          </box></geometry>
+          <pose>11.148 2.316 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_5_7_right">
+          <geometry><box>
+            <size>0.203 0.132 1.500</size>
+          </box></geometry>
+          <pose>11.148 2.316 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_w_5_7_bottom">
+          <geometry><box>
+            <size>0.132 0.204 1.500</size>
+          </box></geometry>
+          <pose>9.816 2.352 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_w_5_7_bottom">
+          <geometry><box>
+            <size>0.132 0.204 1.500</size>
+          </box></geometry>
+          <pose>9.816 2.352 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_w_5_7_top">
+          <geometry><box>
+            <size>0.132 0.204 1.500</size>
+          </box></geometry>
+          <pose>9.816 3.648 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_w_5_7_top">
+          <geometry><box>
+            <size>0.132 0.204 1.500</size>
+          </box></geometry>
+          <pose>9.816 3.648 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_e_6_0">
+          <geometry><box>
+            <size>0.249 1.500 1.500</size>
+          </box></geometry>
+          <pose>0.625 1.500 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_e_6_0">
+          <geometry><box>
+            <size>0.249 1.500 1.500</size>
+          </box></geometry>
+          <pose>0.625 1.500 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_6_0_left">
+          <geometry><box>
+            <size>0.305 0.249 1.500</size>
+          </box></geometry>
+          <pose>-0.597 0.875 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_6_0_left">
+          <geometry><box>
+            <size>0.305 0.249 1.500</size>
+          </box></geometry>
+          <pose>-0.597 0.875 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_6_0_right">
+          <geometry><box>
+            <size>0.305 0.249 1.500</size>
+          </box></geometry>
+          <pose>0.597 0.875 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_6_0_right">
+          <geometry><box>
+            <size>0.305 0.249 1.500</size>
+          </box></geometry>
+          <pose>0.597 0.875 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_w_6_0">
+          <geometry><box>
+            <size>0.050 1.500 1.500</size>
+          </box></geometry>
+          <pose>-0.725 1.500 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_w_6_0">
+          <geometry><box>
+            <size>0.050 1.500 1.500</size>
+          </box></geometry>
+          <pose>-0.725 1.500 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_w_6_1_bottom">
+          <geometry><box>
+            <size>0.067 0.209 1.500</size>
+          </box></geometry>
+          <pose>0.783 0.855 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_w_6_1_bottom">
+          <geometry><box>
+            <size>0.067 0.209 1.500</size>
+          </box></geometry>
+          <pose>0.783 0.855 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_w_6_1_top">
+          <geometry><box>
+            <size>0.067 0.209 1.500</size>
+          </box></geometry>
+          <pose>0.783 2.145 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_w_6_1_top">
+          <geometry><box>
+            <size>0.067 0.209 1.500</size>
+          </box></geometry>
+          <pose>0.783 2.145 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_e_6_2">
+          <geometry><box>
+            <size>0.249 1.500 1.500</size>
+          </box></geometry>
+          <pose>3.625 1.500 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_e_6_2">
+          <geometry><box>
+            <size>0.249 1.500 1.500</size>
+          </box></geometry>
+          <pose>3.625 1.500 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_6_2_left">
+          <geometry><box>
+            <size>0.423 0.249 1.500</size>
+          </box></geometry>
+          <pose>2.462 0.875 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_6_2_left">
+          <geometry><box>
+            <size>0.423 0.249 1.500</size>
+          </box></geometry>
+          <pose>2.462 0.875 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_6_2_right">
+          <geometry><box>
+            <size>0.423 0.249 1.500</size>
+          </box></geometry>
+          <pose>3.538 0.875 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_6_2_right">
+          <geometry><box>
+            <size>0.423 0.249 1.500</size>
+          </box></geometry>
+          <pose>3.538 0.875 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_n_6_3_left">
+          <geometry><box>
+            <size>0.328 0.185 1.500</size>
+          </box></geometry>
+          <pose>3.914 2.158 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_n_6_3_left">
+          <geometry><box>
+            <size>0.328 0.185 1.500</size>
+          </box></geometry>
+          <pose>3.914 2.158 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_n_6_3_right">
+          <geometry><box>
+            <size>0.328 0.185 1.500</size>
+          </box></geometry>
+          <pose>5.086 2.158 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_n_6_3_right">
+          <geometry><box>
+            <size>0.328 0.185 1.500</size>
+          </box></geometry>
+          <pose>5.086 2.158 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_6_3">
+          <geometry><box>
+            <size>1.500 0.185 1.500</size>
+          </box></geometry>
+          <pose>4.500 0.842 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_6_3">
+          <geometry><box>
+            <size>1.500 0.185 1.500</size>
+          </box></geometry>
+          <pose>4.500 0.842 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_w_6_3_bottom">
+          <geometry><box>
+            <size>0.185 0.207 1.500</size>
+          </box></geometry>
+          <pose>3.842 0.854 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_w_6_3_bottom">
+          <geometry><box>
+            <size>0.185 0.207 1.500</size>
+          </box></geometry>
+          <pose>3.842 0.854 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_w_6_3_top">
+          <geometry><box>
+            <size>0.185 0.207 1.500</size>
+          </box></geometry>
+          <pose>3.842 2.146 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_w_6_3_top">
+          <geometry><box>
+            <size>0.185 0.207 1.500</size>
+          </box></geometry>
+          <pose>3.842 2.146 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_6_4_left">
+          <geometry><box>
+            <size>0.318 0.074 1.500</size>
+          </box></geometry>
+          <pose>5.409 0.787 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_6_4_left">
+          <geometry><box>
+            <size>0.318 0.074 1.500</size>
+          </box></geometry>
+          <pose>5.409 0.787 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_6_4_right">
+          <geometry><box>
+            <size>0.318 0.074 1.500</size>
+          </box></geometry>
+          <pose>6.591 0.787 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_6_4_right">
+          <geometry><box>
+            <size>0.318 0.074 1.500</size>
+          </box></geometry>
+          <pose>6.591 0.787 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_n_6_5_left">
+          <geometry><box>
+            <size>0.292 0.065 1.500</size>
+          </box></geometry>
+          <pose>6.896 2.217 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_n_6_5_left">
+          <geometry><box>
+            <size>0.292 0.065 1.500</size>
+          </box></geometry>
+          <pose>6.896 2.217 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_n_6_5_right">
+          <geometry><box>
+            <size>0.292 0.065 1.500</size>
+          </box></geometry>
+          <pose>8.104 2.217 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_n_6_5_right">
+          <geometry><box>
+            <size>0.292 0.065 1.500</size>
+          </box></geometry>
+          <pose>8.104 2.217 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_e_6_5_bottom">
+          <geometry><box>
+            <size>0.065 0.223 1.500</size>
+          </box></geometry>
+          <pose>8.217 0.862 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_e_6_5_bottom">
+          <geometry><box>
+            <size>0.065 0.223 1.500</size>
+          </box></geometry>
+          <pose>8.217 0.862 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_e_6_5_top">
+          <geometry><box>
+            <size>0.065 0.223 1.500</size>
+          </box></geometry>
+          <pose>8.217 2.138 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_e_6_5_top">
+          <geometry><box>
+            <size>0.065 0.223 1.500</size>
+          </box></geometry>
+          <pose>8.217 2.138 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_6_6_left">
+          <geometry><box>
+            <size>0.308 0.069 1.500</size>
+          </box></geometry>
+          <pose>8.404 0.784 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_6_6_left">
+          <geometry><box>
+            <size>0.308 0.069 1.500</size>
+          </box></geometry>
+          <pose>8.404 0.784 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_6_6_right">
+          <geometry><box>
+            <size>0.308 0.069 1.500</size>
+          </box></geometry>
+          <pose>9.596 0.784 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_6_6_right">
+          <geometry><box>
+            <size>0.308 0.069 1.500</size>
+          </box></geometry>
+          <pose>9.596 0.784 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_w_6_6">
+          <geometry><box>
+            <size>0.069 1.500 1.500</size>
+          </box></geometry>
+          <pose>8.284 1.500 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_w_6_6">
+          <geometry><box>
+            <size>0.069 1.500 1.500</size>
+          </box></geometry>
+          <pose>8.284 1.500 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_n_6_7_left">
+          <geometry><box>
+            <size>0.370 0.168 1.500</size>
+          </box></geometry>
+          <pose>9.935 2.166 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_n_6_7_left">
+          <geometry><box>
+            <size>0.370 0.168 1.500</size>
+          </box></geometry>
+          <pose>9.935 2.166 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_n_6_7_right">
+          <geometry><box>
+            <size>0.370 0.168 1.500</size>
+          </box></geometry>
+          <pose>11.065 2.166 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_n_6_7_right">
+          <geometry><box>
+            <size>0.370 0.168 1.500</size>
+          </box></geometry>
+          <pose>11.065 2.166 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_e_6_7">
+          <geometry><box>
+            <size>0.050 1.500 1.500</size>
+          </box></geometry>
+          <pose>11.225 1.500 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_e_6_7">
+          <geometry><box>
+            <size>0.050 1.500 1.500</size>
+          </box></geometry>
+          <pose>11.225 1.500 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_e_7_0_bottom">
+          <geometry><box>
+            <size>0.182 0.287 1.500</size>
+          </box></geometry>
+          <pose>0.659 -0.606 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_e_7_0_bottom">
+          <geometry><box>
+            <size>0.182 0.287 1.500</size>
+          </box></geometry>
+          <pose>0.659 -0.606 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_e_7_0_top">
+          <geometry><box>
+            <size>0.182 0.287 1.500</size>
+          </box></geometry>
+          <pose>0.659 0.606 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_e_7_0_top">
+          <geometry><box>
+            <size>0.182 0.287 1.500</size>
+          </box></geometry>
+          <pose>0.659 0.606 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_7_0">
+          <geometry><box>
+            <size>1.500 0.050 1.500</size>
+          </box></geometry>
+          <pose>0.000 -0.725 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_7_0">
+          <geometry><box>
+            <size>1.500 0.050 1.500</size>
+          </box></geometry>
+          <pose>0.000 -0.725 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_w_7_0">
+          <geometry><box>
+            <size>0.050 1.500 1.500</size>
+          </box></geometry>
+          <pose>-0.725 0.000 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_w_7_0">
+          <geometry><box>
+            <size>0.050 1.500 1.500</size>
+          </box></geometry>
+          <pose>-0.725 0.000 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_n_7_1_left">
+          <geometry><box>
+            <size>0.260 0.175 1.500</size>
+          </box></geometry>
+          <pose>0.880 0.662 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_n_7_1_left">
+          <geometry><box>
+            <size>0.260 0.175 1.500</size>
+          </box></geometry>
+          <pose>0.880 0.662 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_n_7_1_right">
+          <geometry><box>
+            <size>0.260 0.175 1.500</size>
+          </box></geometry>
+          <pose>2.120 0.662 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_n_7_1_right">
+          <geometry><box>
+            <size>0.260 0.175 1.500</size>
+          </box></geometry>
+          <pose>2.120 0.662 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_7_1">
+          <geometry><box>
+            <size>1.500 0.050 1.500</size>
+          </box></geometry>
+          <pose>1.500 -0.725 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_7_1">
+          <geometry><box>
+            <size>1.500 0.050 1.500</size>
+          </box></geometry>
+          <pose>1.500 -0.725 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_w_7_1_bottom">
+          <geometry><box>
+            <size>0.175 0.251 1.500</size>
+          </box></geometry>
+          <pose>0.838 -0.624 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_w_7_1_bottom">
+          <geometry><box>
+            <size>0.175 0.251 1.500</size>
+          </box></geometry>
+          <pose>0.838 -0.624 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_w_7_1_top">
+          <geometry><box>
+            <size>0.175 0.251 1.500</size>
+          </box></geometry>
+          <pose>0.838 0.624 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_w_7_1_top">
+          <geometry><box>
+            <size>0.175 0.251 1.500</size>
+          </box></geometry>
+          <pose>0.838 0.624 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_e_7_2">
+          <geometry><box>
+            <size>0.166 1.500 1.500</size>
+          </box></geometry>
+          <pose>3.667 0.000 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_e_7_2">
+          <geometry><box>
+            <size>0.166 1.500 1.500</size>
+          </box></geometry>
+          <pose>3.667 0.000 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_7_2">
+          <geometry><box>
+            <size>1.500 0.050 1.500</size>
+          </box></geometry>
+          <pose>3.000 -0.725 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_7_2">
+          <geometry><box>
+            <size>1.500 0.050 1.500</size>
+          </box></geometry>
+          <pose>3.000 -0.725 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_w_7_2_bottom">
+          <geometry><box>
+            <size>0.166 0.359 1.500</size>
+          </box></geometry>
+          <pose>2.333 -0.571 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_w_7_2_bottom">
+          <geometry><box>
+            <size>0.166 0.359 1.500</size>
+          </box></geometry>
+          <pose>2.333 -0.571 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_w_7_2_top">
+          <geometry><box>
+            <size>0.166 0.359 1.500</size>
+          </box></geometry>
+          <pose>2.333 0.571 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_w_7_2_top">
+          <geometry><box>
+            <size>0.166 0.359 1.500</size>
+          </box></geometry>
+          <pose>2.333 0.571 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_n_7_3_left">
+          <geometry><box>
+            <size>0.287 0.136 1.500</size>
+          </box></geometry>
+          <pose>3.893 0.682 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_n_7_3_left">
+          <geometry><box>
+            <size>0.287 0.136 1.500</size>
+          </box></geometry>
+          <pose>3.893 0.682 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_n_7_3_right">
+          <geometry><box>
+            <size>0.287 0.136 1.500</size>
+          </box></geometry>
+          <pose>5.107 0.682 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_n_7_3_right">
+          <geometry><box>
+            <size>0.287 0.136 1.500</size>
+          </box></geometry>
+          <pose>5.107 0.682 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_e_7_3_bottom">
+          <geometry><box>
+            <size>0.136 0.375 1.500</size>
+          </box></geometry>
+          <pose>5.182 -0.562 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_e_7_3_bottom">
+          <geometry><box>
+            <size>0.136 0.375 1.500</size>
+          </box></geometry>
+          <pose>5.182 -0.562 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_e_7_3_top">
+          <geometry><box>
+            <size>0.136 0.375 1.500</size>
+          </box></geometry>
+          <pose>5.182 0.562 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_e_7_3_top">
+          <geometry><box>
+            <size>0.136 0.375 1.500</size>
+          </box></geometry>
+          <pose>5.182 0.562 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_7_3">
+          <geometry><box>
+            <size>1.500 0.050 1.500</size>
+          </box></geometry>
+          <pose>4.500 -0.725 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_7_3">
+          <geometry><box>
+            <size>1.500 0.050 1.500</size>
+          </box></geometry>
+          <pose>4.500 -0.725 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_w_7_3_bottom">
+          <geometry><box>
+            <size>0.136 0.335 1.500</size>
+          </box></geometry>
+          <pose>3.818 -0.582 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_w_7_3_bottom">
+          <geometry><box>
+            <size>0.136 0.335 1.500</size>
+          </box></geometry>
+          <pose>3.818 -0.582 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_w_7_3_top">
+          <geometry><box>
+            <size>0.136 0.335 1.500</size>
+          </box></geometry>
+          <pose>3.818 0.582 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_w_7_3_top">
+          <geometry><box>
+            <size>0.136 0.335 1.500</size>
+          </box></geometry>
+          <pose>3.818 0.582 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_7_4">
+          <geometry><box>
+            <size>1.500 0.050 1.500</size>
+          </box></geometry>
+          <pose>6.000 -0.725 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_7_4">
+          <geometry><box>
+            <size>1.500 0.050 1.500</size>
+          </box></geometry>
+          <pose>6.000 -0.725 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_n_7_5_left">
+          <geometry><box>
+            <size>0.221 0.211 1.500</size>
+          </box></geometry>
+          <pose>6.860 0.645 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_n_7_5_left">
+          <geometry><box>
+            <size>0.221 0.211 1.500</size>
+          </box></geometry>
+          <pose>6.860 0.645 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_n_7_5_right">
+          <geometry><box>
+            <size>0.221 0.211 1.500</size>
+          </box></geometry>
+          <pose>8.140 0.645 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_n_7_5_right">
+          <geometry><box>
+            <size>0.221 0.211 1.500</size>
+          </box></geometry>
+          <pose>8.140 0.645 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_e_7_5_bottom">
+          <geometry><box>
+            <size>0.211 0.339 1.500</size>
+          </box></geometry>
+          <pose>8.145 -0.581 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_e_7_5_bottom">
+          <geometry><box>
+            <size>0.211 0.339 1.500</size>
+          </box></geometry>
+          <pose>8.145 -0.581 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_e_7_5_top">
+          <geometry><box>
+            <size>0.211 0.339 1.500</size>
+          </box></geometry>
+          <pose>8.145 0.581 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_e_7_5_top">
+          <geometry><box>
+            <size>0.211 0.339 1.500</size>
+          </box></geometry>
+          <pose>8.145 0.581 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_7_5">
+          <geometry><box>
+            <size>1.500 0.050 1.500</size>
+          </box></geometry>
+          <pose>7.500 -0.725 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_7_5">
+          <geometry><box>
+            <size>1.500 0.050 1.500</size>
+          </box></geometry>
+          <pose>7.500 -0.725 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_n_7_6_left">
+          <geometry><box>
+            <size>0.269 0.095 1.500</size>
+          </box></geometry>
+          <pose>8.384 0.703 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_n_7_6_left">
+          <geometry><box>
+            <size>0.269 0.095 1.500</size>
+          </box></geometry>
+          <pose>8.384 0.703 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_n_7_6_right">
+          <geometry><box>
+            <size>0.269 0.095 1.500</size>
+          </box></geometry>
+          <pose>9.616 0.703 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_n_7_6_right">
+          <geometry><box>
+            <size>0.269 0.095 1.500</size>
+          </box></geometry>
+          <pose>9.616 0.703 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_7_6">
+          <geometry><box>
+            <size>1.500 0.050 1.500</size>
+          </box></geometry>
+          <pose>9.000 -0.725 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_7_6">
+          <geometry><box>
+            <size>1.500 0.050 1.500</size>
+          </box></geometry>
+          <pose>9.000 -0.725 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_w_7_6_bottom">
+          <geometry><box>
+            <size>0.095 0.347 1.500</size>
+          </box></geometry>
+          <pose>8.297 -0.576 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_w_7_6_bottom">
+          <geometry><box>
+            <size>0.095 0.347 1.500</size>
+          </box></geometry>
+          <pose>8.297 -0.576 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_w_7_6_top">
+          <geometry><box>
+            <size>0.095 0.347 1.500</size>
+          </box></geometry>
+          <pose>8.297 0.576 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_w_7_6_top">
+          <geometry><box>
+            <size>0.095 0.347 1.500</size>
+          </box></geometry>
+          <pose>8.297 0.576 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_e_7_7">
+          <geometry><box>
+            <size>0.050 1.500 1.500</size>
+          </box></geometry>
+          <pose>11.225 0.000 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_e_7_7">
+          <geometry><box>
+            <size>0.050 1.500 1.500</size>
+          </box></geometry>
+          <pose>11.225 0.000 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="col_s_7_7">
+          <geometry><box>
+            <size>1.500 0.050 1.500</size>
+          </box></geometry>
+          <pose>10.500 -0.725 0.750 0 0 0</pose>
+        </collision>
+        <visual name="vis_s_7_7">
+          <geometry><box>
+            <size>1.500 0.050 1.500</size>
+          </box></geometry>
+          <pose>10.500 -0.725 0.750 0 0 0</pose>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+  </world>
+</sdf>

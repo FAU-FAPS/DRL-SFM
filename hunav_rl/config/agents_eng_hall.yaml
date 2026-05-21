@@ -1,0 +1,1389 @@
+hunav_loader:
+  ros__parameters:
+    map: cafe
+    publish_people: true
+    agents:
+    - agent1_0
+    - agent1_1
+    - agent1_2
+    - agent1_3
+    - agent1_4
+    - agent1_5
+    - agent1_6
+    - agent1_7
+    - agent2_0
+    - agent2_1
+    - agent2_2
+    - agent2_3
+    - agent2_4
+    - agent2_5
+    - agent2_6
+    - agent2_7
+    - agent3_0
+    - agent3_1
+    - agent3_2
+    - agent3_3
+    - agent3_4
+    - agent4_0
+    - agent4_1
+    - agent4_2
+    - agent4_3
+    - agent4_4
+    - agent5_0
+    - agent5_1
+    - agent5_2
+    - agent5_3
+    - agent6_0
+    - agent6_1
+    - agent6_2
+    - agent6_3
+    agent1_0:
+      id: 1
+      skin: 0
+      group_id: -1
+      max_vel: 1.4857424437849784
+      radius: 0.35
+      behavior:
+        type: 1
+        configuration: 1
+        duration: 40.0
+        once: true
+        vel: 0.6
+        dist: 0.0
+        goal_force_factor: 1.0
+        obstacle_force_factor: 10.0
+        social_force_factor: 5.0
+        other_force_factor: 20.0
+      init_pose:
+        x: 1.0
+        y: 10.0
+        z: 1.25
+        h: 0.0
+      goal_radius: 3.0
+      cyclic_goals: true
+      goals:
+      - g0
+      - g1
+      - g2
+      - g3
+      g0:
+        x: 25.0
+        y: 9.0
+        h: 1.25
+      g1:
+        x: 25.0
+        y: 21.0
+        h: 1.25
+      g2:
+        x: 3.0
+        y: 17.0
+        h: 1.25
+      g3:
+        x: 3.0
+        y: 10.0
+        h: 1.25
+    agent1_1:
+      id: 2
+      skin: 0
+      group_id: -1
+      max_vel: 1.7403981873331034
+      radius: 0.35
+      behavior:
+        type: 2
+        configuration: 1
+        duration: 40.0
+        once: true
+        vel: 0.6
+        dist: 0.0
+        goal_force_factor: 1.0
+        obstacle_force_factor: 10.0
+        social_force_factor: 5.0
+        other_force_factor: 20.0
+      init_pose:
+        x: 1.3
+        y: 9.5
+        z: 1.25
+        h: 0.0
+      goal_radius: 3.0
+      cyclic_goals: true
+      goals:
+      - g0
+      - g1
+      - g2
+      - g3
+      g0:
+        x: 25.0
+        y: 9.0
+        h: 1.25
+      g1:
+        x: 25.0
+        y: 21.0
+        h: 1.25
+      g2:
+        x: 3.0
+        y: 17.0
+        h: 1.25
+      g3:
+        x: 3.0
+        y: 10.0
+        h: 1.25
+    agent1_2:
+      id: 3
+      skin: 0
+      group_id: -1
+      max_vel: 1.3664311117357193
+      radius: 0.35
+      behavior:
+        type: 3
+        configuration: 1
+        duration: 40.0
+        once: true
+        vel: 0.6
+        dist: 0.0
+        goal_force_factor: 1.0
+        obstacle_force_factor: 10.0
+        social_force_factor: 5.0
+        other_force_factor: 20.0
+      init_pose:
+        x: 0.2
+        y: 10.9
+        z: 1.25
+        h: 0.0
+      goal_radius: 3.0
+      cyclic_goals: true
+      goals:
+      - g0
+      - g1
+      - g2
+      - g3
+      g0:
+        x: 25.0
+        y: 9.0
+        h: 1.25
+      g1:
+        x: 25.0
+        y: 21.0
+        h: 1.25
+      g2:
+        x: 3.0
+        y: 17.0
+        h: 1.25
+      g3:
+        x: 3.0
+        y: 10.0
+        h: 1.25
+    agent1_3:
+      id: 4
+      skin: 0
+      group_id: -1
+      max_vel: 1.3560941339813544
+      radius: 0.35
+      behavior:
+        type: 4
+        configuration: 1
+        duration: 40.0
+        once: true
+        vel: 0.6
+        dist: 0.0
+        goal_force_factor: 1.0
+        obstacle_force_factor: 10.0
+        social_force_factor: 5.0
+        other_force_factor: 20.0
+      init_pose:
+        x: 1.0
+        y: 10.1
+        z: 1.25
+        h: 0.0
+      goal_radius: 3.0
+      cyclic_goals: true
+      goals:
+      - g0
+      - g1
+      - g2
+      - g3
+      g0:
+        x: 25.0
+        y: 9.0
+        h: 1.25
+      g1:
+        x: 25.0
+        y: 21.0
+        h: 1.25
+      g2:
+        x: 3.0
+        y: 17.0
+        h: 1.25
+      g3:
+        x: 3.0
+        y: 10.0
+        h: 1.25
+    agent1_4:
+      id: 5
+      skin: 0
+      group_id: -1
+      max_vel: 1.2847756938478596
+      radius: 0.35
+      behavior:
+        type: 5
+        configuration: 1
+        duration: 40.0
+        once: true
+        vel: 0.6
+        dist: 0.0
+        goal_force_factor: 1.0
+        obstacle_force_factor: 10.0
+        social_force_factor: 5.0
+        other_force_factor: 20.0
+      init_pose:
+        x: 0.8
+        y: 9.3
+        z: 1.25
+        h: 0.0
+      goal_radius: 3.0
+      cyclic_goals: true
+      goals:
+      - g0
+      - g1
+      - g2
+      - g3
+      g0:
+        x: 25.0
+        y: 9.0
+        h: 1.25
+      g1:
+        x: 25.0
+        y: 21.0
+        h: 1.25
+      g2:
+        x: 3.0
+        y: 17.0
+        h: 1.25
+      g3:
+        x: 3.0
+        y: 10.0
+        h: 1.25
+    agent1_5:
+      id: 6
+      skin: 0
+      group_id: -1
+      max_vel: 1.1467224766744848
+      radius: 0.35
+      behavior:
+        type: 6
+        configuration: 1
+        duration: 40.0
+        once: true
+        vel: 0.6
+        dist: 0.0
+        goal_force_factor: 1.0
+        obstacle_force_factor: 10.0
+        social_force_factor: 5.0
+        other_force_factor: 20.0
+      init_pose:
+        x: 1.7
+        y: 10.8
+        z: 1.25
+        h: 0.0
+      goal_radius: 3.0
+      cyclic_goals: true
+      goals:
+      - g0
+      - g1
+      - g2
+      - g3
+      g0:
+        x: 25.0
+        y: 9.0
+        h: 1.25
+      g1:
+        x: 25.0
+        y: 21.0
+        h: 1.25
+      g2:
+        x: 3.0
+        y: 17.0
+        h: 1.25
+      g3:
+        x: 3.0
+        y: 10.0
+        h: 1.25
+    agent1_6:
+      id: 7
+      skin: 0
+      group_id: -1
+      max_vel: 1.1276703848369463
+      radius: 0.35
+      behavior:
+        type: 1
+        configuration: 1
+        duration: 40.0
+        once: true
+        vel: 0.6
+        dist: 0.0
+        goal_force_factor: 1.0
+        obstacle_force_factor: 10.0
+        social_force_factor: 5.0
+        other_force_factor: 20.0
+      init_pose:
+        x: 1.6
+        y: 10.4
+        z: 1.25
+        h: 0.0
+      goal_radius: 3.0
+      cyclic_goals: true
+      goals:
+      - g0
+      - g1
+      - g2
+      - g3
+      g0:
+        x: 25.0
+        y: 9.0
+        h: 1.25
+      g1:
+        x: 25.0
+        y: 21.0
+        h: 1.25
+      g2:
+        x: 3.0
+        y: 17.0
+        h: 1.25
+      g3:
+        x: 3.0
+        y: 10.0
+        h: 1.25
+    agent1_7:
+      id: 8
+      skin: 0
+      group_id: -1
+      max_vel: 1.1537863206541186
+      radius: 0.35
+      behavior:
+        type: 2
+        configuration: 1
+        duration: 40.0
+        once: true
+        vel: 0.6
+        dist: 0.0
+        goal_force_factor: 1.0
+        obstacle_force_factor: 10.0
+        social_force_factor: 5.0
+        other_force_factor: 20.0
+      init_pose:
+        x: 1.0
+        y: 9.7
+        z: 1.25
+        h: 0.0
+      goal_radius: 3.0
+      cyclic_goals: true
+      goals:
+      - g0
+      - g1
+      - g2
+      - g3
+      g0:
+        x: 25.0
+        y: 9.0
+        h: 1.25
+      g1:
+        x: 25.0
+        y: 21.0
+        h: 1.25
+      g2:
+        x: 3.0
+        y: 17.0
+        h: 1.25
+      g3:
+        x: 3.0
+        y: 10.0
+        h: 1.25
+    agent2_0:
+      id: 9
+      skin: 0
+      group_id: -1
+      max_vel: 1.8244439836105544
+      radius: 0.35
+      behavior:
+        type: 3
+        configuration: 1
+        duration: 40.0
+        once: true
+        vel: 0.6
+        dist: 0.0
+        goal_force_factor: 1.0
+        obstacle_force_factor: 10.0
+        social_force_factor: 5.0
+        other_force_factor: 20.0
+      init_pose:
+        x: 22.0
+        y: 20.0
+        z: 1.25
+        h: 0.0
+      goal_radius: 3.0
+      cyclic_goals: true
+      goals:
+      - g0
+      - g1
+      - g2
+      - g3
+      g0:
+        x: 3.0
+        y: 17.0
+        h: 1.25
+      g1:
+        x: 3.0
+        y: 10.0
+        h: 1.25
+      g2:
+        x: 25.0
+        y: 9.0
+        h: 1.25
+      g3:
+        x: 25.0
+        y: 21.0
+        h: 1.25
+    agent2_1:
+      id: 10
+      skin: 0
+      group_id: -1
+      max_vel: 0.5713461473045566
+      radius: 0.35
+      behavior:
+        type: 4
+        configuration: 1
+        duration: 40.0
+        once: true
+        vel: 0.6
+        dist: 0.0
+        goal_force_factor: 1.0
+        obstacle_force_factor: 10.0
+        social_force_factor: 5.0
+        other_force_factor: 20.0
+      init_pose:
+        x: 22.5
+        y: 20.2
+        z: 1.25
+        h: 0.0
+      goal_radius: 3.0
+      cyclic_goals: true
+      goals:
+      - g0
+      - g1
+      - g2
+      - g3
+      g0:
+        x: 3.0
+        y: 17.0
+        h: 1.25
+      g1:
+        x: 3.0
+        y: 10.0
+        h: 1.25
+      g2:
+        x: 25.0
+        y: 9.0
+        h: 1.25
+      g3:
+        x: 25.0
+        y: 21.0
+        h: 1.25
+    agent2_2:
+      id: 11
+      skin: 0
+      group_id: -1
+      max_vel: 1.1599730254237843
+      radius: 0.35
+      behavior:
+        type: 5
+        configuration: 1
+        duration: 40.0
+        once: true
+        vel: 0.6
+        dist: 0.0
+        goal_force_factor: 1.0
+        obstacle_force_factor: 10.0
+        social_force_factor: 5.0
+        other_force_factor: 20.0
+      init_pose:
+        x: 21.7
+        y: 19.6
+        z: 1.25
+        h: 0.0
+      goal_radius: 3.0
+      cyclic_goals: true
+      goals:
+      - g0
+      - g1
+      - g2
+      - g3
+      g0:
+        x: 3.0
+        y: 17.0
+        h: 1.25
+      g1:
+        x: 3.0
+        y: 10.0
+        h: 1.25
+      g2:
+        x: 25.0
+        y: 9.0
+        h: 1.25
+      g3:
+        x: 25.0
+        y: 21.0
+        h: 1.25
+    agent2_3:
+      id: 12
+      skin: 0
+      group_id: -1
+      max_vel: 1.344762819692013
+      radius: 0.35
+      behavior:
+        type: 6
+        configuration: 1
+        duration: 40.0
+        once: true
+        vel: 0.6
+        dist: 0.0
+        goal_force_factor: 1.0
+        obstacle_force_factor: 10.0
+        social_force_factor: 5.0
+        other_force_factor: 20.0
+      init_pose:
+        x: 22.1
+        y: 20.1
+        z: 1.25
+        h: 0.0
+      goal_radius: 3.0
+      cyclic_goals: true
+      goals:
+      - g0
+      - g1
+      - g2
+      - g3
+      g0:
+        x: 3.0
+        y: 17.0
+        h: 1.25
+      g1:
+        x: 3.0
+        y: 10.0
+        h: 1.25
+      g2:
+        x: 25.0
+        y: 9.0
+        h: 1.25
+      g3:
+        x: 25.0
+        y: 21.0
+        h: 1.25
+    agent2_4:
+      id: 13
+      skin: 0
+      group_id: -1
+      max_vel: 1.2231909247882236
+      radius: 0.35
+      behavior:
+        type: 1
+        configuration: 1
+        duration: 40.0
+        once: true
+        vel: 0.6
+        dist: 0.0
+        goal_force_factor: 1.0
+        obstacle_force_factor: 10.0
+        social_force_factor: 5.0
+        other_force_factor: 20.0
+      init_pose:
+        x: 21.3
+        y: 20.0
+        z: 1.25
+        h: 0.0
+      goal_radius: 3.0
+      cyclic_goals: true
+      goals:
+      - g0
+      - g1
+      - g2
+      - g3
+      g0:
+        x: 3.0
+        y: 17.0
+        h: 1.25
+      g1:
+        x: 3.0
+        y: 10.0
+        h: 1.25
+      g2:
+        x: 25.0
+        y: 9.0
+        h: 1.25
+      g3:
+        x: 25.0
+        y: 21.0
+        h: 1.25
+    agent2_5:
+      id: 14
+      skin: 0
+      group_id: -1
+      max_vel: 1.733123079606765
+      radius: 0.35
+      behavior:
+        type: 2
+        configuration: 1
+        duration: 40.0
+        once: true
+        vel: 0.6
+        dist: 0.0
+        goal_force_factor: 1.0
+        obstacle_force_factor: 10.0
+        social_force_factor: 5.0
+        other_force_factor: 20.0
+      init_pose:
+        x: 22.2
+        y: 19.2
+        z: 1.25
+        h: 0.0
+      goal_radius: 3.0
+      cyclic_goals: true
+      goals:
+      - g0
+      - g1
+      - g2
+      - g3
+      g0:
+        x: 3.0
+        y: 17.0
+        h: 1.25
+      g1:
+        x: 3.0
+        y: 10.0
+        h: 1.25
+      g2:
+        x: 25.0
+        y: 9.0
+        h: 1.25
+      g3:
+        x: 25.0
+        y: 21.0
+        h: 1.25
+    agent2_6:
+      id: 15
+      skin: 0
+      group_id: -1
+      max_vel: 1.3673892463661728
+      radius: 0.35
+      behavior:
+        type: 3
+        configuration: 1
+        duration: 40.0
+        once: true
+        vel: 0.6
+        dist: 0.0
+        goal_force_factor: 1.0
+        obstacle_force_factor: 10.0
+        social_force_factor: 5.0
+        other_force_factor: 20.0
+      init_pose:
+        x: 22.9
+        y: 20.3
+        z: 1.25
+        h: 0.0
+      goal_radius: 3.0
+      cyclic_goals: true
+      goals:
+      - g0
+      - g1
+      - g2
+      - g3
+      g0:
+        x: 3.0
+        y: 17.0
+        h: 1.25
+      g1:
+        x: 3.0
+        y: 10.0
+        h: 1.25
+      g2:
+        x: 25.0
+        y: 9.0
+        h: 1.25
+      g3:
+        x: 25.0
+        y: 21.0
+        h: 1.25
+    agent2_7:
+      id: 16
+      skin: 0
+      group_id: -1
+      max_vel: 1.3339124420746926
+      radius: 0.35
+      behavior:
+        type: 4
+        configuration: 1
+        duration: 40.0
+        once: true
+        vel: 0.6
+        dist: 0.0
+        goal_force_factor: 1.0
+        obstacle_force_factor: 10.0
+        social_force_factor: 5.0
+        other_force_factor: 20.0
+      init_pose:
+        x: 21.6
+        y: 19.4
+        z: 1.25
+        h: 0.0
+      goal_radius: 3.0
+      cyclic_goals: true
+      goals:
+      - g0
+      - g1
+      - g2
+      - g3
+      g0:
+        x: 3.0
+        y: 17.0
+        h: 1.25
+      g1:
+        x: 3.0
+        y: 10.0
+        h: 1.25
+      g2:
+        x: 25.0
+        y: 9.0
+        h: 1.25
+      g3:
+        x: 25.0
+        y: 21.0
+        h: 1.25
+    agent3_0:
+      id: 17
+      skin: 0
+      group_id: -1
+      max_vel: 1.3079477989499717
+      radius: 0.35
+      behavior:
+        type: 5
+        configuration: 1
+        duration: 40.0
+        once: true
+        vel: 0.6
+        dist: 0.0
+        goal_force_factor: 1.0
+        obstacle_force_factor: 10.0
+        social_force_factor: 5.0
+        other_force_factor: 20.0
+      init_pose:
+        x: 18.0
+        y: 19.0
+        z: 1.25
+        h: 0.0
+      goal_radius: 3.0
+      cyclic_goals: true
+      goals:
+      - g0
+      - g1
+      g0:
+        x: 3.0
+        y: 17.0
+        h: 1.25
+      g1:
+        x: 25.0
+        y: 21.0
+        h: 1.25
+    agent3_1:
+      id: 18
+      skin: 0
+      group_id: -1
+      max_vel: 1.5232528070430553
+      radius: 0.35
+      behavior:
+        type: 6
+        configuration: 1
+        duration: 40.0
+        once: true
+        vel: 0.6
+        dist: 0.0
+        goal_force_factor: 1.0
+        obstacle_force_factor: 10.0
+        social_force_factor: 5.0
+        other_force_factor: 20.0
+      init_pose:
+        x: 18.6
+        y: 18.5
+        z: 1.25
+        h: 0.0
+      goal_radius: 3.0
+      cyclic_goals: true
+      goals:
+      - g0
+      - g1
+      g0:
+        x: 3.0
+        y: 17.0
+        h: 1.25
+      g1:
+        x: 25.0
+        y: 21.0
+        h: 1.25
+    agent3_2:
+      id: 19
+      skin: 0
+      group_id: -1
+      max_vel: 0.8037601019464174
+      radius: 0.35
+      behavior:
+        type: 1
+        configuration: 1
+        duration: 40.0
+        once: true
+        vel: 0.6
+        dist: 0.0
+        goal_force_factor: 1.0
+        obstacle_force_factor: 10.0
+        social_force_factor: 5.0
+        other_force_factor: 20.0
+      init_pose:
+        x: 17.8
+        y: 19.7
+        z: 1.25
+        h: 0.0
+      goal_radius: 3.0
+      cyclic_goals: true
+      goals:
+      - g0
+      - g1
+      g0:
+        x: 3.0
+        y: 17.0
+        h: 1.25
+      g1:
+        x: 25.0
+        y: 21.0
+        h: 1.25
+    agent3_3:
+      id: 20
+      skin: 0
+      group_id: -1
+      max_vel: 1.3408025675438373
+      radius: 0.35
+      behavior:
+        type: 2
+        configuration: 1
+        duration: 40.0
+        once: true
+        vel: 0.6
+        dist: 0.0
+        goal_force_factor: 1.0
+        obstacle_force_factor: 10.0
+        social_force_factor: 5.0
+        other_force_factor: 20.0
+      init_pose:
+        x: 18.4
+        y: 19.3
+        z: 1.25
+        h: 0.0
+      goal_radius: 3.0
+      cyclic_goals: true
+      goals:
+      - g0
+      - g1
+      g0:
+        x: 3.0
+        y: 17.0
+        h: 1.25
+      g1:
+        x: 25.0
+        y: 21.0
+        h: 1.25
+    agent3_4:
+      id: 21
+      skin: 0
+      group_id: -1
+      max_vel: 0.9525311269893104
+      radius: 0.35
+      behavior:
+        type: 3
+        configuration: 1
+        duration: 40.0
+        once: true
+        vel: 0.6
+        dist: 0.0
+        goal_force_factor: 1.0
+        obstacle_force_factor: 10.0
+        social_force_factor: 5.0
+        other_force_factor: 20.0
+      init_pose:
+        x: 17.5
+        y: 18.8
+        z: 1.25
+        h: 0.0
+      goal_radius: 3.0
+      cyclic_goals: true
+      goals:
+      - g0
+      - g1
+      g0:
+        x: 3.0
+        y: 17.0
+        h: 1.25
+      g1:
+        x: 25.0
+        y: 21.0
+        h: 1.25
+    agent4_0:
+      id: 22
+      skin: 0
+      group_id: -1
+      max_vel: 1.4476680780267457
+      radius: 0.35
+      behavior:
+        type: 4
+        configuration: 1
+        duration: 40.0
+        once: true
+        vel: 0.6
+        dist: 0.0
+        goal_force_factor: 1.0
+        obstacle_force_factor: 10.0
+        social_force_factor: 5.0
+        other_force_factor: 20.0
+      init_pose:
+        x: 30.0
+        y: 10.0
+        z: 1.25
+        h: 0.0
+      goal_radius: 3.0
+      cyclic_goals: true
+      goals:
+      - g0
+      - g1
+      g0:
+        x: 30.0
+        y: 9.0
+        h: 1.25
+      g1:
+        x: 3.0
+        y: 10.0
+        h: 1.25
+    agent4_1:
+      id: 23
+      skin: 0
+      group_id: -1
+      max_vel: 1.630026565184822
+      radius: 0.35
+      behavior:
+        type: 5
+        configuration: 1
+        duration: 40.0
+        once: true
+        vel: 0.6
+        dist: 0.0
+        goal_force_factor: 1.0
+        obstacle_force_factor: 10.0
+        social_force_factor: 5.0
+        other_force_factor: 20.0
+      init_pose:
+        x: 30.7
+        y: 9.5
+        z: 1.25
+        h: 0.0
+      goal_radius: 3.0
+      cyclic_goals: true
+      goals:
+      - g0
+      - g1
+      g0:
+        x: 30.0
+        y: 9.0
+        h: 1.25
+      g1:
+        x: 3.0
+        y: 10.0
+        h: 1.25
+    agent4_2:
+      id: 24
+      skin: 0
+      group_id: -1
+      max_vel: 1.3762127711208583
+      radius: 0.35
+      behavior:
+        type: 6
+        configuration: 1
+        duration: 40.0
+        once: true
+        vel: 0.6
+        dist: 0.0
+        goal_force_factor: 1.0
+        obstacle_force_factor: 10.0
+        social_force_factor: 5.0
+        other_force_factor: 20.0
+      init_pose:
+        x: 29.4
+        y: 10.3
+        z: 1.25
+        h: 0.0
+      goal_radius: 3.0
+      cyclic_goals: true
+      goals:
+      - g0
+      - g1
+      g0:
+        x: 30.0
+        y: 9.0
+        h: 1.25
+      g1:
+        x: 3.0
+        y: 10.0
+        h: 1.25
+    agent4_3:
+      id: 25
+      skin: 0
+      group_id: -1
+      max_vel: 1.5432548353904532
+      radius: 0.35
+      behavior:
+        type: 1
+        configuration: 1
+        duration: 40.0
+        once: true
+        vel: 0.6
+        dist: 0.0
+        goal_force_factor: 1.0
+        obstacle_force_factor: 10.0
+        social_force_factor: 5.0
+        other_force_factor: 20.0
+      init_pose:
+        x: 30.2
+        y: 10.8
+        z: 1.25
+        h: 0.0
+      goal_radius: 3.0
+      cyclic_goals: true
+      goals:
+      - g0
+      - g1
+      g0:
+        x: 30.0
+        y: 9.0
+        h: 1.25
+      g1:
+        x: 3.0
+        y: 10.0
+        h: 1.25
+    agent4_4:
+      id: 26
+      skin: 0
+      group_id: -1
+      max_vel: 1.741067230686378
+      radius: 0.35
+      behavior:
+        type: 2
+        configuration: 1
+        duration: 40.0
+        once: true
+        vel: 0.6
+        dist: 0.0
+        goal_force_factor: 1.0
+        obstacle_force_factor: 10.0
+        social_force_factor: 5.0
+        other_force_factor: 20.0
+      init_pose:
+        x: 29.0
+        y: 9.0
+        z: 1.25
+        h: 0.0
+      goal_radius: 3.0
+      cyclic_goals: true
+      goals:
+      - g0
+      - g1
+      g0:
+        x: 30.0
+        y: 9.0
+        h: 1.25
+      g1:
+        x: 3.0
+        y: 10.0
+        h: 1.25
+    agent5_0:
+      id: 27
+      skin: 0
+      group_id: -1
+      max_vel: 1.092827095029301
+      radius: 0.35
+      behavior:
+        type: 3
+        configuration: 1
+        duration: 40.0
+        once: true
+        vel: 0.6
+        dist: 0.0
+        goal_force_factor: 1.0
+        obstacle_force_factor: 10.0
+        social_force_factor: 5.0
+        other_force_factor: 20.0
+      init_pose:
+        x: 2.0
+        y: 15.0
+        z: 1.25
+        h: 0.0
+      goal_radius: 3.0
+      cyclic_goals: true
+      goals:
+      - g0
+      - g1
+      g0:
+        x: 28.0
+        y: 20.0
+        h: 1.25
+      g1:
+        x: 3.0
+        y: 16.0
+        h: 1.25
+    agent5_1:
+      id: 28
+      skin: 0
+      group_id: -1
+      max_vel: 0.66002855340587
+      radius: 0.35
+      behavior:
+        type: 4
+        configuration: 1
+        duration: 40.0
+        once: true
+        vel: 0.6
+        dist: 0.0
+        goal_force_factor: 1.0
+        obstacle_force_factor: 10.0
+        social_force_factor: 5.0
+        other_force_factor: 20.0
+      init_pose:
+        x: 2.4
+        y: 14.2
+        z: 1.25
+        h: 0.0
+      goal_radius: 3.0
+      cyclic_goals: true
+      goals:
+      - g0
+      - g1
+      g0:
+        x: 28.0
+        y: 20.0
+        h: 1.25
+      g1:
+        x: 3.0
+        y: 16.0
+        h: 1.25
+    agent5_2:
+      id: 29
+      skin: 0
+      group_id: -1
+      max_vel: 1.369423561244931
+      radius: 0.35
+      behavior:
+        type: 5
+        configuration: 1
+        duration: 40.0
+        once: true
+        vel: 0.6
+        dist: 0.0
+        goal_force_factor: 1.0
+        obstacle_force_factor: 10.0
+        social_force_factor: 5.0
+        other_force_factor: 20.0
+      init_pose:
+        x: 1.5
+        y: 15.7
+        z: 1.25
+        h: 0.0
+      goal_radius: 3.0
+      cyclic_goals: true
+      goals:
+      - g0
+      - g1
+      g0:
+        x: 28.0
+        y: 20.0
+        h: 1.25
+      g1:
+        x: 3.0
+        y: 16.0
+        h: 1.25
+    agent5_3:
+      id: 30
+      skin: 0
+      group_id: -1
+      max_vel: 1.2953147519518915
+      radius: 0.35
+      behavior:
+        type: 6
+        configuration: 1
+        duration: 40.0
+        once: true
+        vel: 0.6
+        dist: 0.0
+        goal_force_factor: 1.0
+        obstacle_force_factor: 10.0
+        social_force_factor: 5.0
+        other_force_factor: 20.0
+      init_pose:
+        x: 2.9
+        y: 15.3
+        z: 1.25
+        h: 0.0
+      goal_radius: 3.0
+      cyclic_goals: true
+      goals:
+      - g0
+      - g1
+      g0:
+        x: 28.0
+        y: 20.0
+        h: 1.25
+      g1:
+        x: 3.0
+        y: 16.0
+        h: 1.25
+    agent6_0:
+      id: 31
+      skin: 0
+      group_id: -1
+      max_vel: 1.4649136327699783
+      radius: 0.35
+      behavior:
+        type: 1
+        configuration: 1
+        duration: 40.0
+        once: true
+        vel: 0.6
+        dist: 0.0
+        goal_force_factor: 1.0
+        obstacle_force_factor: 10.0
+        social_force_factor: 5.0
+        other_force_factor: 20.0
+      init_pose:
+        x: 14.0
+        y: 15.0
+        z: 1.25
+        h: 0.0
+      goal_radius: 3.0
+      cyclic_goals: true
+      goals:
+      - g0
+      - g1
+      g0:
+        x: 14.0
+        y: 22.0
+        h: 1.25
+      g1:
+        x: 16.0
+        y: 6.0
+        h: 1.25
+    agent6_1:
+      id: 32
+      skin: 0
+      group_id: -1
+      max_vel: 1.2537092353611392
+      radius: 0.35
+      behavior:
+        type: 2
+        configuration: 1
+        duration: 40.0
+        once: true
+        vel: 0.6
+        dist: 0.0
+        goal_force_factor: 1.0
+        obstacle_force_factor: 10.0
+        social_force_factor: 5.0
+        other_force_factor: 20.0
+      init_pose:
+        x: 14.2
+        y: 15.6
+        z: 1.25
+        h: 0.0
+      goal_radius: 3.0
+      cyclic_goals: true
+      goals:
+      - g0
+      - g1
+      g0:
+        x: 14.0
+        y: 22.0
+        h: 1.25
+      g1:
+        x: 16.0
+        y: 6.0
+        h: 1.25
+    agent6_2:
+      id: 33
+      skin: 0
+      group_id: -1
+      max_vel: 1.1594174498920011
+      radius: 0.35
+      behavior:
+        type: 3
+        configuration: 1
+        duration: 40.0
+        once: true
+        vel: 0.6
+        dist: 0.0
+        goal_force_factor: 1.0
+        obstacle_force_factor: 10.0
+        social_force_factor: 5.0
+        other_force_factor: 20.0
+      init_pose:
+        x: 13.5
+        y: 14.8
+        z: 1.25
+        h: 0.0
+      goal_radius: 3.0
+      cyclic_goals: true
+      goals:
+      - g0
+      - g1
+      g0:
+        x: 14.0
+        y: 22.0
+        h: 1.25
+      g1:
+        x: 16.0
+        y: 6.0
+        h: 1.25
+    agent6_3:
+      id: 34
+      skin: 0
+      group_id: -1
+      max_vel: 1.1134814122787644
+      radius: 0.35
+      behavior:
+        type: 4
+        configuration: 1
+        duration: 40.0
+        once: true
+        vel: 0.6
+        dist: 0.0
+        goal_force_factor: 1.0
+        obstacle_force_factor: 10.0
+        social_force_factor: 5.0
+        other_force_factor: 20.0
+      init_pose:
+        x: 14.8
+        y: 15.2
+        z: 1.25
+        h: 0.0
+      goal_radius: 3.0
+      cyclic_goals: true
+      goals:
+      - g0
+      - g1
+      g0:
+        x: 14.0
+        y: 22.0
+        h: 1.25
+      g1:
+        x: 16.0
+        y: 6.0
+        h: 1.25

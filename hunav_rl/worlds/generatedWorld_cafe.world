@@ -1,0 +1,523 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+    <world name="default">
+        <plugin name="hunav_plugin" filename="libHuNavPlugin.so">
+            <update_rate>100</update_rate>
+            <robot_name>waffle_rl</robot_name>
+            <use_gazebo_obs>true</use_gazebo_obs>
+            <global_frame_to_publish>map</global_frame_to_publish>
+            <use_navgoal_to_start>false</use_navgoal_to_start>
+            <update_collision_cylinder>false</update_collision_cylinder>
+            <navgoal_topic>goal_pose</navgoal_topic>
+            <ignore_models>
+                <model>ground_plane</model>
+                <model>cafe</model>
+                <model>agent1_collision</model>
+                <model>agent1_1_collision</model>
+                <model>agent1_2_collision</model>
+                <model>agent2_collision</model>
+                <model>agent2_1_collision</model>
+                <model>agent2_2_collision</model>
+                <model>agent2_3_collision</model>
+                <model>agent2_4_collision</model>
+                <model>agent7_collision</model>
+                <model>agent7_1_collision</model>
+                <model>agent7_2_collision</model>
+                <model>agent7_3_collision</model>
+                <model>agent7_4_collision</model>
+                <model>agent4_collision</model>
+                <model>agent4_1_collision</model>
+                <model>agent4_2_collision</model>
+                <model>agent4_3_collision</model>
+                <model>agent4_4_collision</model>
+                <model>agent5_collision</model>
+                <model>agent5_1_collision</model>
+                <model>agent5_2_collision</model>
+                <model>agent5_3_collision</model>
+                <model>agent5_4_collision</model>
+                <model>agent6_collision</model>
+                <model>agent6_1_collision</model>
+            </ignore_models>
+        </plugin>
+        <plugin name="gazebo_ros_state" filename="libgazebo_ros_state.so">
+            <update_rate>1.0</update_rate>
+        </plugin>
+        <physics type="ode">
+            <max_step_size>0.001</max_step_size>
+            <real_time_factor>0.2</real_time_factor>
+            <real_time_update_rate>200</real_time_update_rate>
+            <ode>
+                <solver>
+                    <type>quick</type>
+                    <iters>150</iters>
+                    <precon_iters>0</precon_iters>
+                    <sor>1.3999999999999999</sor>
+                    <use_dynamic_moi_rescaling>1</use_dynamic_moi_rescaling>
+                </solver>
+            </ode>
+        </physics>
+        <actor name="agent1">
+            <pose>3.484565 6.934117 1.250000 0 0 0.000000</pose>
+            <skin>
+                <filename>elegant_man.dae</filename>
+                <scale>1</scale>
+            </skin>
+            <animation name="no_active">
+                <filename>07_01-walk.bvh</filename>
+                <scale>1.0</scale>
+            </animation>
+            <animation name="active">
+                <filename>07_01-walk.bvh</filename>
+                <scale>1.0</scale>
+                <interpolate_x>true</interpolate_x>
+            </animation>
+        </actor>
+        <actor name="agent1_1">
+            <pose>3.684565 6.734117 1.250000 0 0 0.000000</pose>
+            <skin>
+                <filename>elegant_man.dae</filename>
+                <scale>1</scale>
+            </skin>
+            <animation name="no_active">
+                <filename>07_01-walk.bvh</filename>
+                <scale>1.0</scale>
+            </animation>
+            <animation name="active">
+                <filename>07_01-walk.bvh</filename>
+                <scale>1.0</scale>
+                <interpolate_x>true</interpolate_x>
+            </animation>
+        </actor>
+        <actor name="agent1_2">
+            <pose>3.084565 7.034117 1.250000 0 0 0.000000</pose>
+            <skin>
+                <filename>elegant_man.dae</filename>
+                <scale>1</scale>
+            </skin>
+            <animation name="no_active">
+                <filename>07_01-walk.bvh</filename>
+                <scale>1.0</scale>
+            </animation>
+            <animation name="active">
+                <filename>07_01-walk.bvh</filename>
+                <scale>1.0</scale>
+                <interpolate_x>true</interpolate_x>
+            </animation>
+        </actor>
+        <actor name="agent2">
+            <pose>3.308198 -10.327183 1.250000 0 0 0.000000</pose>
+            <skin>
+                <filename>worker_man.dae</filename>
+                <scale>1</scale>
+            </skin>
+            <animation name="no_active">
+                <filename>07_01-walk.bvh</filename>
+                <scale>1.0</scale>
+            </animation>
+            <animation name="active">
+                <filename>07_01-walk.bvh</filename>
+                <scale>1.0</scale>
+                <interpolate_x>true</interpolate_x>
+            </animation>
+        </actor>
+        <actor name="agent2_1">
+            <pose>3.508198 -10.127183 1.250000 0 0 0.000000</pose>
+            <skin>
+                <filename>worker_man.dae</filename>
+                <scale>1</scale>
+            </skin>
+            <animation name="no_active">
+                <filename>07_01-walk.bvh</filename>
+                <scale>1.0</scale>
+            </animation>
+            <animation name="active">
+                <filename>07_01-walk.bvh</filename>
+                <scale>1.0</scale>
+                <interpolate_x>true</interpolate_x>
+            </animation>
+        </actor>
+        <actor name="agent2_2">
+            <pose>2.908198 -10.527183 1.250000 0 0 0.000000</pose>
+            <skin>
+                <filename>worker_man.dae</filename>
+                <scale>1</scale>
+            </skin>
+            <animation name="no_active">
+                <filename>07_01-walk.bvh</filename>
+                <scale>1.0</scale>
+            </animation>
+            <animation name="active">
+                <filename>07_01-walk.bvh</filename>
+                <scale>1.0</scale>
+                <interpolate_x>true</interpolate_x>
+            </animation>
+        </actor>
+        <actor name="agent2_3">
+            <pose>3.108198 -9.827183 1.250000 0 0 0.000000</pose>
+            <skin>
+                <filename>worker_man.dae</filename>
+                <scale>1</scale>
+            </skin>
+            <animation name="no_active">
+                <filename>07_01-walk.bvh</filename>
+                <scale>1.0</scale>
+            </animation>
+            <animation name="active">
+                <filename>07_01-walk.bvh</filename>
+                <scale>1.0</scale>
+                <interpolate_x>true</interpolate_x>
+            </animation>
+        </actor>
+        <actor name="agent2_4">
+            <pose>3.608198 -10.727183 1.250000 0 0 0.000000</pose>
+            <skin>
+                <filename>worker_man.dae</filename>
+                <scale>1</scale>
+            </skin>
+            <animation name="no_active">
+                <filename>07_01-walk.bvh</filename>
+                <scale>1.0</scale>
+            </animation>
+            <animation name="active">
+                <filename>07_01-walk.bvh</filename>
+                <scale>1.0</scale>
+                <interpolate_x>true</interpolate_x>
+            </animation>
+        </actor>
+        <actor name="agent7">
+            <pose>-4.183384 -9.522011 1.250000 0 0 0.000000</pose>
+            <skin>
+                <filename>regular_man.dae</filename>
+                <scale>1</scale>
+            </skin>
+            <animation name="no_active">
+                <filename>07_01-walk.bvh</filename>
+                <scale>1.0</scale>
+            </animation>
+            <animation name="active">
+                <filename>07_01-walk.bvh</filename>
+                <scale>1.0</scale>
+                <interpolate_x>true</interpolate_x>
+            </animation>
+        </actor>
+        <actor name="agent7_1">
+            <pose>-3.883384 -9.222011 1.250000 0 0 0.000000</pose>
+            <skin>
+                <filename>regular_man.dae</filename>
+                <scale>1</scale>
+            </skin>
+            <animation name="no_active">
+                <filename>07_01-walk.bvh</filename>
+                <scale>1.0</scale>
+            </animation>
+            <animation name="active">
+                <filename>07_01-walk.bvh</filename>
+                <scale>1.0</scale>
+                <interpolate_x>true</interpolate_x>
+            </animation>
+        </actor>
+        <actor name="agent7_2">
+            <pose>-4.483384 -9.822011 1.250000 0 0 0.000000</pose>
+            <skin>
+                <filename>regular_man.dae</filename>
+                <scale>1</scale>
+            </skin>
+            <animation name="no_active">
+                <filename>07_01-walk.bvh</filename>
+                <scale>1.0</scale>
+            </animation>
+            <animation name="active">
+                <filename>07_01-walk.bvh</filename>
+                <scale>1.0</scale>
+                <interpolate_x>true</interpolate_x>
+            </animation>
+        </actor>
+        <actor name="agent7_3">
+            <pose>-4.083384 -10.022011 1.250000 0 0 0.000000</pose>
+            <skin>
+                <filename>regular_man.dae</filename>
+                <scale>1</scale>
+            </skin>
+            <animation name="no_active">
+                <filename>07_01-walk.bvh</filename>
+                <scale>1.0</scale>
+            </animation>
+            <animation name="active">
+                <filename>07_01-walk.bvh</filename>
+                <scale>1.0</scale>
+                <interpolate_x>true</interpolate_x>
+            </animation>
+        </actor>
+        <actor name="agent7_4">
+            <pose>-4.283384 -9.122011 1.250000 0 0 0.000000</pose>
+            <skin>
+                <filename>regular_man.dae</filename>
+                <scale>1</scale>
+            </skin>
+            <animation name="no_active">
+                <filename>07_01-walk.bvh</filename>
+                <scale>1.0</scale>
+            </animation>
+            <animation name="active">
+                <filename>07_01-walk.bvh</filename>
+                <scale>1.0</scale>
+                <interpolate_x>true</interpolate_x>
+            </animation>
+        </actor>
+        <actor name="agent4">
+            <pose>-2.554606 1.953529 1.250000 0 0 0.000000</pose>
+            <skin>
+                <filename>elegant_woman.dae</filename>
+                <scale>1</scale>
+            </skin>
+            <animation name="no_active">
+                <filename>07_01-walk.bvh</filename>
+                <scale>1.0</scale>
+            </animation>
+            <animation name="active">
+                <filename>07_01-walk.bvh</filename>
+                <scale>1.0</scale>
+                <interpolate_x>true</interpolate_x>
+            </animation>
+        </actor>
+        <actor name="agent4_1">
+            <pose>-2.354606 2.153529 1.250000 0 0 0.000000</pose>
+            <skin>
+                <filename>elegant_woman.dae</filename>
+                <scale>1</scale>
+            </skin>
+            <animation name="no_active">
+                <filename>07_01-walk.bvh</filename>
+                <scale>1.0</scale>
+            </animation>
+            <animation name="active">
+                <filename>07_01-walk.bvh</filename>
+                <scale>1.0</scale>
+                <interpolate_x>true</interpolate_x>
+            </animation>
+        </actor>
+        <actor name="agent4_2">
+            <pose>-3.054606 1.753529 1.250000 0 0 0.000000</pose>
+            <skin>
+                <filename>elegant_woman.dae</filename>
+                <scale>1</scale>
+            </skin>
+            <animation name="no_active">
+                <filename>07_01-walk.bvh</filename>
+                <scale>1.0</scale>
+            </animation>
+            <animation name="active">
+                <filename>07_01-walk.bvh</filename>
+                <scale>1.0</scale>
+                <interpolate_x>true</interpolate_x>
+            </animation>
+        </actor>
+        <actor name="agent4_3">
+            <pose>-2.654606 2.353529 1.250000 0 0 0.000000</pose>
+            <skin>
+                <filename>elegant_woman.dae</filename>
+                <scale>1</scale>
+            </skin>
+            <animation name="no_active">
+                <filename>07_01-walk.bvh</filename>
+                <scale>1.0</scale>
+            </animation>
+            <animation name="active">
+                <filename>07_01-walk.bvh</filename>
+                <scale>1.0</scale>
+                <interpolate_x>true</interpolate_x>
+            </animation>
+        </actor>
+        <actor name="agent4_4">
+            <pose>-2.854606 1.453529 1.250000 0 0 0.000000</pose>
+            <skin>
+                <filename>elegant_woman.dae</filename>
+                <scale>1</scale>
+            </skin>
+            <animation name="no_active">
+                <filename>07_01-walk.bvh</filename>
+                <scale>1.0</scale>
+            </animation>
+            <animation name="active">
+                <filename>07_01-walk.bvh</filename>
+                <scale>1.0</scale>
+                <interpolate_x>true</interpolate_x>
+            </animation>
+        </actor>
+        <actor name="agent5">
+            <pose>1.067725 -8.156725 1.250000 0 0 0.000000</pose>
+            <skin>
+                <filename>casual_man.dae</filename>
+                <scale>1</scale>
+            </skin>
+            <animation name="no_active">
+                <filename>07_01-walk.bvh</filename>
+                <scale>1.0</scale>
+            </animation>
+            <animation name="active">
+                <filename>07_01-walk.bvh</filename>
+                <scale>1.0</scale>
+                <interpolate_x>true</interpolate_x>
+            </animation>
+        </actor>
+        <actor name="agent5_1">
+            <pose>1.267725 -7.956725 1.250000 0 0 0.000000</pose>
+            <skin>
+                <filename>casual_man.dae</filename>
+                <scale>1</scale>
+            </skin>
+            <animation name="no_active">
+                <filename>07_01-walk.bvh</filename>
+                <scale>1.0</scale>
+            </animation>
+            <animation name="active">
+                <filename>07_01-walk.bvh</filename>
+                <scale>1.0</scale>
+                <interpolate_x>true</interpolate_x>
+            </animation>
+        </actor>
+        <actor name="agent5_2">
+            <pose>0.867725 -8.356725 1.250000 0 0 0.000000</pose>
+            <skin>
+                <filename>casual_man.dae</filename>
+                <scale>1</scale>
+            </skin>
+            <animation name="no_active">
+                <filename>07_01-walk.bvh</filename>
+                <scale>1.0</scale>
+            </animation>
+            <animation name="active">
+                <filename>07_01-walk.bvh</filename>
+                <scale>1.0</scale>
+                <interpolate_x>true</interpolate_x>
+            </animation>
+        </actor>
+        <actor name="agent5_3">
+            <pose>1.467725 -8.456725 1.250000 0 0 0.000000</pose>
+            <skin>
+                <filename>casual_man.dae</filename>
+                <scale>1</scale>
+            </skin>
+            <animation name="no_active">
+                <filename>07_01-walk.bvh</filename>
+                <scale>1.0</scale>
+            </animation>
+            <animation name="active">
+                <filename>07_01-walk.bvh</filename>
+                <scale>1.0</scale>
+                <interpolate_x>true</interpolate_x>
+            </animation>
+        </actor>
+        <actor name="agent5_4">
+            <pose>0.667725 -7.856725 1.250000 0 0 0.000000</pose>
+            <skin>
+                <filename>casual_man.dae</filename>
+                <scale>1</scale>
+            </skin>
+            <animation name="no_active">
+                <filename>07_01-walk.bvh</filename>
+                <scale>1.0</scale>
+            </animation>
+            <animation name="active">
+                <filename>07_01-walk.bvh</filename>
+                <scale>1.0</scale>
+                <interpolate_x>true</interpolate_x>
+            </animation>
+        </actor>
+        <actor name="agent6">
+            <pose>0.000000 -10.000000 1.250000 0 0 0.000000</pose>
+            <skin>
+                <filename>elegant_woman.dae</filename>
+                <scale>1</scale>
+            </skin>
+            <animation name="no_active">
+                <filename>07_01-walk.bvh</filename>
+                <scale>1.0</scale>
+            </animation>
+            <animation name="active">
+                <filename>07_01-walk.bvh</filename>
+                <scale>1.0</scale>
+                <interpolate_x>true</interpolate_x>
+            </animation>
+        </actor>
+        <actor name="agent6_1">
+            <pose>0.000000 -9.000000 1.250000 0 0 0.000000</pose>
+            <skin>
+                <filename>elegant_woman.dae</filename>
+                <scale>1</scale>
+            </skin>
+            <animation name="no_active">
+                <filename>07_01-walk.bvh</filename>
+                <scale>1.0</scale>
+            </animation>
+            <animation name="active">
+                <filename>07_01-walk.bvh</filename>
+                <scale>1.0</scale>
+                <interpolate_x>true</interpolate_x>
+            </animation>
+        </actor>
+        <gui>
+            <camera name="user_camera">
+                <pose>0 -18 8.0 0 0.523 1.5707</pose>
+            </camera>
+        </gui>
+        <light name="sun" type="directional">
+            <cast_shadows>1</cast_shadows>
+            <pose>0 0 10 0 -0 0</pose>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+            <specular>0.2 0.2 0.2 1</specular>
+            <attenuation>
+                <range>1000</range>
+                <constant>0.9</constant>
+                <linear>0.01</linear>
+                <quadratic>0.001</quadratic>
+            </attenuation>
+            <direction>0 0.5 -0.9</direction>
+        </light>
+        <light name="point_light" type="point">
+            <pose>0 -0.377195 6.59868 0 -0 0</pose>
+            <diffuse>0.784314 0.784314 0.784314 1</diffuse>
+            <specular>0.0980392 0.0980392 0.0980392 1</specular>
+            <attenuation>
+                <range>50</range>
+                <constant>0.8</constant>
+                <linear>0</linear>
+                <quadratic>0.001</quadratic>
+            </attenuation>
+            <cast_shadows>0</cast_shadows>
+            <direction>0 0 -1</direction>
+        </light>
+        <include>
+            <uri>model://ground_plane</uri>
+        </include>
+        <include>
+            <pose>0.0 0.0 -0.15 0 0 0</pose>
+            <uri>model://cafe</uri>
+        </include>
+        <include>
+            <name>table1</name>
+            <pose>0.5 -1.6 0.1 0 0 0</pose>
+            <uri>model://CoffeeTable</uri>
+        </include>
+        <include>
+            <name>table2</name>
+            <pose>2.4 -5.5 0.05 0 0 0</pose>
+            <uri>model://CoffeeTable</uri>
+        </include>
+        <include>
+            <name>table3</name>
+            <pose>-1.5 -5.5 0.05 0 0 0</pose>
+            <uri>model://CoffeeTable</uri>
+        </include>
+        <include>
+            <name>table4</name>
+            <pose>2.4 -9 0.05 0 0 0</pose>
+            <uri>model://CoffeeTable</uri>
+        </include>
+        <include>
+            <name>table5</name>
+            <pose>-1.5 -9 0.05 0 0 0</pose>
+            <uri>model://CoffeeTable</uri>
+        </include>
+    </world>
+</sdf>

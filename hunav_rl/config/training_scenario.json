@@ -1,0 +1,9 @@
+{
+    "name": "SAC-HuMap-LeNet-Cost2_SFM",
+    "scenario": [
+        "sac",
+        "cost_as_reward",
+        "angle_reward",
+        "sfm_prediction"
+    ]
+}

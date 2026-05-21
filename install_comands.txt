@@ -1,0 +1,41 @@
+sudo apt install ros-humble-gazebo-ros-pkgs
+sudo apt install ros-humble-navigation2
+sudo apt install ros-humble-nav2-bringup
+sudo apt install ros-humble-turtlebot3-gazebo
+sudo apt install ros-humble-rtabmap*
+sudo apt install ros-humble-tf-transformations
+pip install stable-baselines3
+pip install sb3-contrib
+pip install torch
+pip install torchvision
+pip install torchaudio
+pip install tensorboard
+
+pip install "numpy<2"
+
+git clone https://github.com/robotics-upo/lightsfm.git
+cd lightsfm
+make
+sudo make install
+cd ~/.
+mkdir drlsfm_ws
+cd drlsfm_ws
+mkdir src
+cd src
+git clone --branch ros2 https://github.com/wg-perception/people.git
+git clone --branch ros2 https://github.com/aws-robotics/aws-robomaker-hospital-world.git
+git clone --branch ros2 https://github.com/aws-robotics/aws-robomaker-small-house-world.git
+git clone https://github.com/Kalemat96/hunav_gazebo_wrapper.git
+git clone https://git.faps.uni-erlangen.de/intelligent_wheelchair/drl-sfm.git
+git clone https://github.com/Kalemat96/hunav_sim.git
+cd ..
+source /opt/ros/humble/setup.bash
+colcon build
+source install/setup.bash
+echo 'source /opt/ros/humble/setup.bash' >> ~/.bashrc
+echo 'source /usr/share/gazebo/setup.sh' >> ~/.bashrc
+echo 'export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:/opt/ros/humble/share/turtlebot3_gazebo/models' >> ~/.bashrc
+echo 'export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:~/drlsfm_ws/src/aws-robomaker-hospital-world/models' >> ~/.bashrc
+echo 'export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:~/drlsfm_ws/src/aws-robomaker-hospital-world/fuel_models' >> ~/.bashrc
+echo 'export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:~/drlsfm_ws/src/aws-robomaker-small-house-world/models' >> ~/.bashrc
+echo 'export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:~/drlsfm_ws/src/drl-sfm/hunav_rl/models' >> ~/.bashrc
