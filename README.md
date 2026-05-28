@@ -4,7 +4,7 @@
 
 Implementation of our paper **"DRL-SFM: Learning Social Navigation from Costmaps and Social Forces for Mobile Robots and Intelligent Wheelchairs"**. This repository provides the full DRL-SFM training pipeline, the pre-trained model used in our evaluation, and a social navigation benchmark built on [HuNavSim](https://github.com/robotics-upo/hunav_sim) to allow full reproducibility of our results.
 
-[![Demo Video](https://img.shields.io/badge/Demo-YouTube-red?logo=youtube)](https://youtu.be/your-video-id)
+[![Demo Video](https://img.shields.io/badge/Demo-YouTube-red?logo=youtube)](https://youtu.be/-_ZDtEr17gA)
 
 ## Key Features
 - **Full training pipeline** — modular RL training with configurable launchers ([start_trainings.py](./hunav_rl/start_trainings.py))
