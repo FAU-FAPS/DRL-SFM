@@ -37,8 +37,8 @@ Clone this repository into the `src` folder of your ROS 2 workspace, then run th
 
 ```bash
 mkdir -p ~/your_ws/src && cd ~/your_ws/src
-git clone https://github.com/Kalemat96/drl-sfm.git
-cd drl-sfm
+git clone https://github.com/FAU-FAPS/DRL-SFM.git
+cd DRL-SFM
 bash install.sh
 ```
 
@@ -47,7 +47,7 @@ bash install.sh
 All scripts are located in the `hunav_rl` subdirectory:
 
 ```bash
-cd <your_ws>/src/drl-sfm/hunav_rl
+cd <your_ws>/src/DRL-SFM/hunav_rl
 ```
 
 ### Training
